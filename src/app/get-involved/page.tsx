@@ -302,34 +302,67 @@ https://savedhurwatrees.org`;
             </div>
           </div>
 
-          {/* Social Media Campaign Poster Card */}
-          <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-sm space-y-4">
-            <div className="flex items-center justify-between">
-              <span className="text-xs uppercase font-bold text-emerald-800 tracking-wider">
-                Official Campaign Artwork
-              </span>
-              <span className="text-[10px] bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded-full">
-                Instagram &amp; Facebook (1:1)
-              </span>
+          {/* Social Media Campaign Poster Cards */}
+          <div className="space-y-6">
+            {/* Poster 1: Corridor Infographic */}
+            <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-sm space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-xs uppercase font-bold text-emerald-800 tracking-wider">
+                  Poster 1 • Corridor Factsheet
+                </span>
+                <span className="text-[10px] bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded-full">
+                  1:1 Square
+                </span>
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+                <img
+                  src="/images/social_banner.jpg"
+                  alt="Save Dhurwa Trees Official Campaign Poster"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Project facts, corridor map summary, and constructive green design proposal for Dhurwa road.
+              </p>
+              <a
+                href="/images/social_banner.jpg"
+                download="Save_Dhurwa_Trees_Campaign_Banner.jpg"
+                className="w-full py-2.5 px-4 rounded-xl bg-[#1b4332] hover:bg-[#2d6a4f] text-white text-xs font-bold transition-colors flex items-center justify-center gap-2"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Factsheet Artwork (JPG)</span>
+              </a>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
-              <img
-                src="/images/social_banner.jpg"
-                alt="Save Dhurwa Trees Official Campaign Poster"
-                className="w-full h-auto object-cover"
-              />
+
+            {/* Poster 2: Birds & Wildlife Emotional Connect */}
+            <div className="bg-white rounded-3xl border border-emerald-200 p-6 shadow-sm space-y-4 bg-gradient-to-b from-white to-emerald-50/30">
+              <div className="flex items-center justify-between">
+                <span className="text-xs uppercase font-bold text-amber-800 tracking-wider">
+                  Poster 2 • Wildlife &amp; Birds
+                </span>
+                <span className="text-[10px] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full">
+                  Emotional Appeal
+                </span>
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+                <img
+                  src="/images/birds_awareness.jpg"
+                  alt="Save Dhurwa Trees Birds and Wildlife Poster"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Emotional poster highlighting the 40+ native bird species nesting along the 7,000 Dhurwa trees.
+              </p>
+              <a
+                href="/images/birds_awareness.jpg"
+                download="Save_Dhurwa_Trees_Birds_Wildlife_Poster.jpg"
+                className="w-full py-2.5 px-4 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold transition-colors flex items-center justify-center gap-2"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Birds Poster (JPG)</span>
+              </a>
             </div>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Use this high-resolution artwork for your Instagram posts, Facebook updates, and WhatsApp profile status to spread constructive, lawful awareness.
-            </p>
-            <a
-              href="/images/social_banner.jpg"
-              download="Save_Dhurwa_Trees_Campaign_Banner.jpg"
-              className="w-full py-2.5 px-4 rounded-xl bg-[#1b4332] hover:bg-[#2d6a4f] text-white text-xs font-bold transition-colors flex items-center justify-center gap-2"
-            >
-              <Download className="w-4 h-4" />
-              <span>Download High-Res Artwork (JPG)</span>
-            </a>
           </div>
         </div>
       </div>
