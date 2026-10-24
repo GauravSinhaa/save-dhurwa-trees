@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Save Dhurwa Trees — Development Without Destruction",
     description:
-      "Documenting and mapping trees potentially affected by the Dhurwa road corridor in Ranchi, Jharkhand. Explore alternatives and support tree preservation.",
-    images: ["/images/hero_trees.jpg"],
+      "Documenting and mapping trees potentially affected by the Dhurwa road corridor in Ranchi, Jharkhand. Scientific research, open GIS census, and constructive citizen dialogue.",
+    images: ["/images/social_banner.jpg"],
     type: "website",
   },
 };

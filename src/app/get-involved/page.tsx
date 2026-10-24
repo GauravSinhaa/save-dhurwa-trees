@@ -14,6 +14,7 @@ import {
   Send,
   AlertCircle,
   ExternalLink,
+  Download,
 } from "lucide-react";
 import { GrassrootsSpotlight } from "@/components/community/GrassrootsSpotlight";
 
@@ -294,6 +295,36 @@ https://savedhurwatrees.org`;
                 <span>WhatsApp</span>
               </a>
             </div>
+          </div>
+
+          {/* Social Media Campaign Poster Card */}
+          <div className="bg-white rounded-3xl border border-gray-200 p-6 shadow-sm space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-xs uppercase font-bold text-emerald-800 tracking-wider">
+                Official Campaign Artwork
+              </span>
+              <span className="text-[10px] bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded-full">
+                Instagram &amp; Facebook (1:1)
+              </span>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+              <img
+                src="/images/social_banner.jpg"
+                alt="Save Dhurwa Trees Official Campaign Poster"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-xs text-gray-600 leading-relaxed">
+              Use this high-resolution artwork for your Instagram posts, Facebook updates, and WhatsApp profile status to spread constructive, lawful awareness.
+            </p>
+            <a
+              href="/images/social_banner.jpg"
+              download="Save_Dhurwa_Trees_Campaign_Banner.jpg"
+              className="w-full py-2.5 px-4 rounded-xl bg-[#1b4332] hover:bg-[#2d6a4f] text-white text-xs font-bold transition-colors flex items-center justify-center gap-2"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download High-Res Artwork (JPG)</span>
+            </a>
           </div>
         </div>
       </div>
