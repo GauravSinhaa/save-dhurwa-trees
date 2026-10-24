@@ -151,9 +151,9 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       disclaimer:
-        "Save Dhurwa Trees is an independent, fact-based civic platform created by Ranchi citizens, urban researchers, and environmentalists. It is not an official government portal.",
+        "Save Dhurwa Trees is an independent, fact-based academic research and civic documentation platform created by Ranchi citizens, urban researchers, and environmentalists. It is not an official government portal.",
       peacefulStance:
-        "We advocate lawfully, transparently, and constructively for balanced infrastructure and mature green preservation.",
+        "CIVIC CLARIFICATION: This platform is NOT an agitation, protest, or confrontational demonstration. We advocate strictly through lawful, transparent, and constructive democratic participation, right to information, and empirical ecological research to assist authorities in sustainable urban planning.",
       rights: "Open Civic Data Initiative. All public records subject to verification.",
       privacy: "Privacy Policy",
       terms: "Terms of Use",
@@ -232,9 +232,9 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       disclaimer:
-        "धुर्वा के वृक्षों को बचाएं रांची के नागरिकों, शोधकर्ताओं और पर्यावरणविदों द्वारा संचालित एक स्वतंत्र, साक्ष्य-आधारित नागरिक मंच है। यह कोई आधिकारिक सरकारी पोर्टल नहीं है।",
+        "धुर्वा के वृक्षों को बचाएं रांची के नागरिकों, शोधकर्ताओं और पर्यावरणविदों द्वारा संचालित एक स्वतंत्र, साक्ष्य-आधारित वैज्ञानिक शोध व नागरिक दस्तावेज़ीकरण मंच है। यह कोई आधिकारिक सरकारी पोर्टल नहीं है।",
       peacefulStance:
-        "हम संतुलित बुनियादी ढांचे और पुराने वृक्षों के संरक्षण के लिए शांतिपूर्ण, पारदर्शी और रचनात्मक रूप से वकालत करते हैं।",
+        "नागरिक स्पष्टीकरण: यह पहल कोई विरोध प्रदर्शन (प्रोटेस्ट), धरना या आंदोलन नहीं है। हम कानूनसम्मत, शांतिपूर्ण, पारदर्शी और रचनात्मक जनसहभागिता तथा वैज्ञानिक डेटा के माध्यम से टिकाऊ शहरी विकास और हरित संरक्षण की वकालत करते हैं।",
       rights: "खुला नागरिक डेटा। सभी सार्वजनिक रिकॉर्ड सत्यापन के अधीन हैं।",
       privacy: "गोपनीयता नीति",
       terms: "उपयोग की शर्तें",

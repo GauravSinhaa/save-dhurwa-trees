@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   Users,
   Shield,
+  ShieldCheck,
   Download,
   AlertCircle,
   Clock,
@@ -177,6 +178,19 @@ export default function PublicPetitionPage() {
             <Download className="w-3.5 h-3.5" />
             <span>Print Petition Statement for Submission</span>
           </button>
+        </div>
+      </div>
+
+      {/* Non-Protest Legal Representation Banner */}
+      <div className="bg-emerald-50 rounded-2xl border border-emerald-300 p-4 text-xs text-emerald-950 flex items-start gap-3">
+        <ShieldCheck className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
+        <div className="space-y-1">
+          <p className="font-bold text-[#1b4332]">
+            Democratic &amp; Lawful Representation — Not an Agitation or Protest
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            This representation is a lawful, democratic, and respectful communication addressed to the competent state authorities under constitutional rights to petition and participate in transparent environmental governance. It is not an unlawful assembly, dharna, road blockage, or disruptive agitation.
+          </p>
         </div>
       </div>
 

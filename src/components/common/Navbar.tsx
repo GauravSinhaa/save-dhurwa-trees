@@ -44,13 +44,21 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-[#1b4332]/95 text-white backdrop-blur-md border-b border-[#2d6a4f]/50 shadow-md">
       {/* Top Advisory Bar */}
-      <div className="bg-[#122e22] text-xs text-[#a7d7c5] px-4 py-1 text-center flex items-center justify-center gap-2 border-b border-[#1b4332]">
-        <span className="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-        <span>
-          <strong>{language === "hi" ? "सूचना:" : "Civic Notice:"}</strong>{" "}
+      <div className="bg-[#122e22] text-[11px] sm:text-xs text-[#a7d7c5] px-4 py-1.5 text-center flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-b border-[#1b4332]">
+        <div className="flex items-center gap-1.5">
+          <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>
+            <strong>{language === "hi" ? "नागरिक स्पष्टीकरण:" : "Civic Notice:"}</strong>{" "}
+            {language === "hi"
+              ? "यह कोई विरोध प्रदर्शन (प्रोटेस्ट) या आंदोलन नहीं है — यह वैज्ञानिक अनुसंधान, पेड़ दस्तावेज़ीकरण और सकारात्मक संवाद हेतु नागरिक पहल है।"
+              : "This is NOT an agitation or protest — it is an open scientific research, tree documentation, and constructive civic dialogue platform."}
+          </span>
+        </div>
+        <span className="hidden md:inline text-emerald-600">•</span>
+        <span className="text-gray-300">
           {language === "hi"
-            ? "7,000 प्रभावित वृक्षों की संख्या मीडिया द्वारा अनुमानित है — आधिकारिक वन सर्वेक्षण सत्यापन प्रतीक्षित है।"
-            : "The ~7,000 affected trees figure is a reported estimate — official forest department verification is pending."}
+            ? "7,000 प्रभावित वृक्षों की संख्या मीडिया द्वारा अनुमानित है (सत्यापन प्रतीक्षित)"
+            : "~7,000 affected trees figure is a reported estimate pending official survey."}
         </span>
       </div>
 

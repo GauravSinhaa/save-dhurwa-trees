@@ -10,7 +10,9 @@
 
 **Save Dhurwa Trees** is a production-oriented, fact-based civic technology and environmental platform built to document, map, and advocate for the preservation of mature trees potentially threatened by the proposed **10-lane road widening project in Dhurwa, Ranchi, Jharkhand, India** (from Vivekananda School More to Ranchi Ring Road via Naya Sarai, approximately 6.089 km).
 
-The project has been reported in media and preliminary tender notices to potentially affect approximately 7,000 trees. This platform treats that figure as an **unverified reported estimate** until official joint-survey records are made public, while offering constructive, engineering-backed alternatives to preserve 60%–80% of mature trees.
+The project has been reported in media and preliminary tender notices to potentially affect approximately 7,000 trees. This platform treats that figure as an **unverified reported estimate** until official joint-survey records are made public, while offering constructive, engineering-backed alternatives to preserve mature trees.
+
+> **Important Civic Notice**: This platform is **NOT a protest, agitation, road blockade, or confrontational demonstration**. It is an open, lawful academic documentation and scientific GIS research effort by citizens, urban planners, and environmentalists to assist government authorities with transparent field data and constructive dialogue for sustainable infrastructure.
 
 ---
 

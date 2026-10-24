@@ -107,8 +107,23 @@ export default function HomePage() {
             </Link>
           </div>
 
+          {/* Civic Clarification: Lawful Research Initiative, Not a Protest */}
+          <div className="mt-8 max-w-2xl mx-auto bg-emerald-950/70 border border-emerald-400/50 rounded-xl px-4 py-2.5 text-xs text-emerald-100 backdrop-blur-md flex items-center justify-center gap-2.5 shadow-sm">
+            <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span className="leading-snug">
+              <strong>
+                {language === "hi"
+                  ? "नागरिक स्थिति (सकारात्मक पहल):"
+                  : "Civic Notice (Constructive Dialogue):"}
+              </strong>{" "}
+              {language === "hi"
+                ? "यह मंच कोई विरोध प्रदर्शन (प्रोटेस्ट) या आंदोलन नहीं है। यह सरकारी नियमों के पूर्ण अनुपालन में वैज्ञानिक डेटा संकलन, वृक्ष मैपिंग और सतत विकास हेतु पारदर्शी नागरिक सहयोग की पहल है।"
+                : "This platform is NOT an agitation or protest. It is a strictly lawful, nonpartisan scientific research and civic documentation effort to assist urban planning and preserve Ranchi's green cover."}
+            </span>
+          </div>
+
           {/* Verification Disclaimer */}
-          <div className="mt-10 max-w-2xl mx-auto bg-black/40 border border-amber-400/40 rounded-xl p-3 text-xs text-amber-200/90 backdrop-blur-md flex items-center justify-center gap-2">
+          <div className="mt-4 max-w-2xl mx-auto bg-black/40 border border-amber-400/40 rounded-xl p-3 text-xs text-amber-200/90 backdrop-blur-md flex items-center justify-center gap-2">
             <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
             <span>{t.hero.disclaimer}</span>
           </div>

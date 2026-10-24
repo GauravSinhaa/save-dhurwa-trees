@@ -124,6 +124,20 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Explicit Legal Clarification: Not an Agitation or Protest */}
+      <div className="bg-emerald-50 rounded-3xl border-2 border-emerald-300 p-6 sm:p-8 space-y-3 shadow-sm text-xs text-emerald-950">
+        <h3 className="text-base font-bold text-[#1b4332] flex items-center gap-2">
+          <Shield className="w-5 h-5 text-emerald-700" />
+          <span>Non-Protest & Lawful Civic Charter</span>
+        </h3>
+        <p className="leading-relaxed">
+          <strong>This platform is NOT an agitation, demonstration, road blockade, or confrontational protest.</strong> We operate with complete respect for lawful procedures, public order, and the civic necessity of modern infrastructure development in Ranchi.
+        </p>
+        <p className="leading-relaxed text-gray-700">
+          Our initiative functions exclusively as an <strong>open academic research and environmental documentation project</strong>. By recording tree coordinates, avian habitats, and mature canopy health, we aim to provide objective, verified data that assists urban planners, environmental authorities, and policymakers in achieving balanced, sustainable infrastructure without unnecessary ecological loss.
+        </p>
+      </div>
+
       {/* Disclaimers & Independent Nature */}
       <div className="bg-[#fcfbf7] rounded-3xl border border-amber-300 p-6 sm:p-8 space-y-4 shadow-sm text-xs text-amber-950">
         <h3 className="text-base font-bold text-amber-900 flex items-center gap-2">
