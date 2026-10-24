@@ -102,6 +102,8 @@ export default function DocumentsTransparencyPage() {
   });
 
   const availableRtiQuestions = [
+    "Copy of Complete Detailed Project Report (DPR Volume 2: Environmental & Social Assessment).",
+    "Copy of standalone Environmental Impact Assessment (EIA) / Environmental Management Plan (EMP), or certified confirmation if environmental clearance was claimed exempt.",
     "Copy of Joint Tree Enumeration Survey Register along Chainage 0+000 to 6+089.",
     "Copy of statutory Tree Felling Permission application and sanction order, if issued.",
     "Approved Right-of-Way (ROW) and geometric cross-section alignment drawings.",
