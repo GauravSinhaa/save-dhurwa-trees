@@ -11,6 +11,8 @@ import {
   FileText,
   Mail,
   HelpCircle,
+  Phone,
+  MessageCircle,
 } from "lucide-react";
 
 export default function AboutPage() {
@@ -170,8 +172,26 @@ export default function AboutPage() {
           citizen group and notice any factual discrepancy in a tree record, alignment
           chainage, or document classification, please notify our audit team:
         </p>
-        <div className="p-3 bg-gray-50 rounded-xl border border-gray-200 font-mono text-gray-900 font-semibold inline-block">
-          contact@savedhurwatrees.org • audit@savedhurwatrees.org
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="p-3 bg-gray-50 rounded-xl border border-gray-200 font-mono text-gray-900 font-semibold inline-block">
+            contact@savedhurwatrees.org • audit@savedhurwatrees.org
+          </div>
+          <a
+            href="https://wa.me/919884029319?text=Hello%21%20I%20would%20like%20to%20connect%20regarding%20Save%20Dhurwa%20Trees."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-emerald-50 hover:bg-emerald-100 rounded-xl border border-emerald-200 font-mono text-emerald-900 font-semibold inline-flex items-center gap-1.5 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4 text-emerald-700" />
+            <span>WhatsApp: +91 98840 29319</span>
+          </a>
+          <a
+            href="tel:+917667597383"
+            className="p-3 bg-gray-100 hover:bg-gray-200 rounded-xl border border-gray-300 font-mono text-gray-900 font-semibold inline-flex items-center gap-1.5 transition-colors"
+          >
+            <Phone className="w-4 h-4 text-gray-700" />
+            <span>Admin: +91 76675 97383</span>
+          </a>
         </div>
         <p className="text-[11px] text-gray-500">
           All corrections are promptly investigated against primary sources and recorded in

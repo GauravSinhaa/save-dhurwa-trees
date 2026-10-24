@@ -15,6 +15,8 @@ import {
   AlertCircle,
   ExternalLink,
   Download,
+  Phone,
+  MessageCircle,
 } from "lucide-react";
 import { GrassrootsSpotlight } from "@/components/community/GrassrootsSpotlight";
 
@@ -131,16 +133,107 @@ https://savedhurwatrees.org`;
           </div>
 
           {success ? (
-            <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-300 text-center space-y-3">
-              <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-              <h3 className="font-bold text-base text-emerald-950">
-                Welcome to the Initiative!
-              </h3>
-              <p className="text-xs text-emerald-800 leading-relaxed max-w-md mx-auto">
-                Thank you for offering your time and knowledge. A coordinator will reach
-                out to you via email regarding upcoming geotagging drives and research
-                meetings.
-              </p>
+            <div className="space-y-6">
+              <div className="p-6 bg-emerald-50 rounded-2xl border border-emerald-300 text-center space-y-3">
+                <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
+                <h3 className="font-bold text-lg text-emerald-950">
+                  Welcome to the Initiative!
+                </h3>
+                <p className="text-xs text-emerald-800 leading-relaxed max-w-md mx-auto">
+                  Thank you for registering. Your details have been recorded in the civic registry.
+                </p>
+              </div>
+
+              {/* Direct Connect with Coordinators */}
+              <div className="bg-gradient-to-br from-white to-emerald-50/60 rounded-2xl border-2 border-emerald-300 p-5 space-y-4 shadow-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm text-gray-900">
+                      Connect Directly with Coordinators
+                    </h4>
+                    <p className="text-xs text-gray-600">
+                      Reach out now to get added to the volunteer group or coordinate field tasks:
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  {/* WhatsApp Helpline Card */}
+                  <div className="p-3.5 bg-white rounded-xl border border-emerald-200 shadow-xs space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">
+                        Direct WhatsApp
+                      </span>
+                      <MessageCircle className="w-4 h-4 text-emerald-600" />
+                    </div>
+                    <div className="font-mono text-sm font-bold text-gray-900">
+                      +91 98840 29319
+                    </div>
+                    <a
+                      href="https://wa.me/919884029319?text=Hello%21%20I%20just%20registered%20as%20a%20volunteer%20on%20the%20Save%20Dhurwa%20Trees%20portal%20and%20would%20love%20to%20connect."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-2 px-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition-colors flex items-center justify-center gap-1.5"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5" />
+                      <span>Chat on WhatsApp</span>
+                    </a>
+                  </div>
+
+                  {/* Primary Admin Phone Card */}
+                  <div className="p-3.5 bg-white rounded-xl border border-gray-200 shadow-xs space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-gray-800 bg-gray-100 px-2 py-0.5 rounded-full">
+                        Primary Admin
+                      </span>
+                      <Phone className="w-4 h-4 text-gray-600" />
+                    </div>
+                    <div className="font-mono text-sm font-bold text-gray-900">
+                      +91 76675 97383
+                    </div>
+                    <div className="flex gap-1.5">
+                      <a
+                        href="tel:+917667597383"
+                        className="flex-1 py-2 px-2 rounded-lg bg-gray-900 hover:bg-black text-white text-xs font-bold transition-colors flex items-center justify-center gap-1 text-center"
+                      >
+                        <Phone className="w-3 h-3" />
+                        <span>Call</span>
+                      </a>
+                      <a
+                        href="https://wa.me/917667597383?text=Hello%21%20I%20just%20registered%20as%20a%20volunteer%20on%20Save%20Dhurwa%20Trees%20portal."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2 px-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-800 text-xs font-bold transition-colors flex items-center justify-center gap-1"
+                        title="Chat on WhatsApp"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 text-emerald-700" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSuccess(false);
+                    setFormData({
+                      display_name: "",
+                      email: "",
+                      locality: "Dhurwa, Sector 2",
+                      areas_of_interest: ["Tree Documentation & Photography", "GIS Mapping"],
+                      skills: "",
+                      availability: "Weekends / Flexible",
+                      consent_contact: true,
+                    });
+                  }}
+                  className="text-xs text-emerald-800 font-semibold hover:underline block text-center pt-1"
+                >
+                  ← Register another volunteer
+                </button>
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -259,6 +352,32 @@ https://savedhurwatrees.org`;
                   {submitting ? "Registering..." : "Register as Volunteer"}
                 </span>
               </button>
+
+              {/* Instant Direct Connect Bar */}
+              <div className="pt-3 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-600 bg-gray-50 p-3 rounded-xl">
+                <span className="font-medium text-gray-700">
+                  Prefer connecting immediately?
+                </span>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://wa.me/919884029319?text=Hello%21%20I%20would%20like%20to%20connect%20with%20Save%20Dhurwa%20Trees%20volunteer%20team."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 font-semibold text-emerald-800 hover:text-emerald-950"
+                  >
+                    <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>WhatsApp: 98840 29319</span>
+                  </a>
+                  <span className="text-gray-300 hidden sm:inline">•</span>
+                  <a
+                    href="tel:+917667597383"
+                    className="inline-flex items-center gap-1 font-semibold text-gray-800 hover:text-black"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-gray-600" />
+                    <span>Admin: 76675 97383</span>
+                  </a>
+                </div>
+              </div>
             </form>
           )}
         </div>

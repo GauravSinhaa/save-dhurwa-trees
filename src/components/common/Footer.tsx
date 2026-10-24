@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { Trees, Shield, ExternalLink, Heart, Info, ArrowUpRight } from "lucide-react";
+import { Trees, Shield, ExternalLink, Heart, Info, ArrowUpRight, Phone, MessageCircle } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -111,6 +111,37 @@ export const Footer: React.FC = () => {
               <p className="text-[11px] text-gray-400">
                 {t.footer.peacefulStance}
               </p>
+            </div>
+
+            {/* Coordinator Contacts & WhatsApp */}
+            <div className="p-3 bg-[#16382a] rounded-lg border border-[#2d6a4f]/70 text-xs space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 block">
+                Coordinator Helplines
+              </span>
+              <div className="space-y-1.5 text-[11px]">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400">Primary Admin:</span>
+                  <a
+                    href="tel:+917667597383"
+                    className="font-mono text-white font-semibold hover:text-emerald-300 flex items-center gap-1"
+                  >
+                    <Phone className="w-3 h-3 text-emerald-400" />
+                    <span>+91 76675 97383</span>
+                  </a>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400">WhatsApp Desk:</span>
+                  <a
+                    href="https://wa.me/919884029319?text=Hello%21%20I%20would%20like%20to%20connect%20with%20Save%20Dhurwa%20Trees%20team."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-emerald-300 font-semibold hover:text-emerald-200 flex items-center gap-1"
+                  >
+                    <MessageCircle className="w-3 h-3 text-emerald-400" />
+                    <span>+91 98840 29319</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
