@@ -29,22 +29,6 @@ import { QuickReportSection } from "@/components/home/QuickReportSection";
 
 export default function HomePage() {
   const { language, t } = useLanguage();
-  const [stats, setStats] = useState<any>(null);
-
-  useEffect(() => {
-    async function fetchStats() {
-      try {
-        const res = await fetch("/api/stats");
-        const json = await res.json();
-        if (json.success) {
-          setStats(json.data);
-        }
-      } catch (err) {
-        console.error("Failed to fetch stats", err);
-      }
-    }
-    fetchStats();
-  }, []);
 
   return (
     <div className="space-y-16 pb-16">
@@ -130,121 +114,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Impact Statistics Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 sm:gap-4">
-          {/* Stat 1: Reported estimate */}
-          <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-4 shadow-md flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-200/70 px-2 py-0.5 rounded">
-                Unverified Report
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-amber-950 mt-2 font-mono">
-                ~7,000
-              </div>
-              <div className="text-xs font-semibold text-amber-900 mt-1">
-                {t.stats.reportedAffected}
-              </div>
-            </div>
-            <div className="text-[10px] text-amber-700/80 mt-2 italic">
-              {t.stats.reportedSubtitle}
-            </div>
-          </div>
-
-          {/* Stat 2: Individually Verified Trees */}
-          <div className="bg-white border border-[#2d6a4f]/30 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
-                Field Verified
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-[#1b4332] mt-2 font-mono">
-                {stats?.verifiedTrees ?? "6"}
-              </div>
-              <div className="text-xs font-semibold text-gray-800 mt-1">
-                {t.stats.verifiedTrees}
-              </div>
-            </div>
-            <div className="text-[10px] text-gray-500 mt-2">
-              {t.stats.verifiedSubtitle}
-            </div>
-          </div>
-
-          {/* Stat 3: Citizen Reports */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-blue-800 bg-blue-100 px-2 py-0.5 rounded">
-                Citizen Input
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2 font-mono">
-                {stats?.citizenReportsCount ?? "2"}
-              </div>
-              <div className="text-xs font-semibold text-gray-800 mt-1">
-                {t.stats.citizenReports}
-              </div>
-            </div>
-            <div className="text-[10px] text-gray-500 mt-2">
-              {t.stats.citizenSubtitle}
-            </div>
-          </div>
-
-          {/* Stat 4: Public Supporters */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-purple-800 bg-purple-100 px-2 py-0.5 rounded">
-                Petition
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-purple-950 mt-2 font-mono">
-                {stats?.publicSupporterCount ?? "5"}
-              </div>
-              <div className="text-xs font-semibold text-gray-800 mt-1">
-                {t.stats.supporters}
-              </div>
-            </div>
-            <div className="text-[10px] text-gray-500 mt-2">
-              {t.stats.supportersSubtitle}
-            </div>
-          </div>
-
-          {/* Stat 5: Official Documents */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-teal-800 bg-teal-100 px-2 py-0.5 rounded">
-                Transparency
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-teal-950 mt-2 font-mono">
-                {stats?.officialDocumentsCount ?? "4"}
-              </div>
-              <div className="text-xs font-semibold text-gray-800 mt-1">
-                {t.stats.officialDocs}
-              </div>
-            </div>
-            <div className="text-[10px] text-gray-500 mt-2">
-              {t.stats.officialDocsSubtitle}
-            </div>
-          </div>
-
-          {/* Stat 6: Pending Verification */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-            <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-orange-800 bg-orange-100 px-2 py-0.5 rounded">
-                Review Queue
-              </span>
-              <div className="text-2xl sm:text-3xl font-extrabold text-orange-950 mt-2 font-mono">
-                {stats?.pendingTrees ?? "1"}
-              </div>
-              <div className="text-xs font-semibold text-gray-800 mt-1">
-                {t.stats.pendingReview}
-              </div>
-            </div>
-            <div className="text-[10px] text-gray-500 mt-2">
-              {t.stats.pendingReviewSubtitle}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why This Matters: 4 Evidence Cards */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1b4332] tracking-tight">
             {t.whyItMatters.title}
