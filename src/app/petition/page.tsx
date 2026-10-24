@@ -28,7 +28,7 @@ export default function PublicPetitionPage() {
   const { language } = useLanguage();
 
   const [supporters, setSupporters] = useState<Supporter[]>([]);
-  const [totalCount, setTotalCount] = useState(5);
+  const [totalCount, setTotalCount] = useState(0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [locality, setLocality] = useState("Dhurwa, Sector 3");
@@ -58,7 +58,7 @@ export default function PublicPetitionPage() {
       const json = await res.json();
       if (json.success) {
         setSupporters(json.supporters || []);
-        setTotalCount(json.total_signatures || 5);
+        setTotalCount(json.total_signatures || 0);
       }
     } catch (e) {
       console.error(e);
@@ -144,25 +144,33 @@ export default function PublicPetitionPage() {
         </div>
 
         <div className="text-sm text-gray-800 leading-relaxed space-y-4 font-serif">
-          <p className="font-semibold text-[#1b4332] text-base">
-            &quot;We support better roads, safer mobility, and improved connectivity in
-            Ranchi. We also believe that the city&apos;s established trees are valuable
-            public assets.
+          <p className="font-semibold text-[#1b4332] text-base leading-snug">
+            &quot;We support modern infrastructure, safer commutes, and orderly connectivity for Ranchi. As citizens and taxpayers whose public funds fund this reported ₹177 crore project, access to complete project documents and transparency is our statutory and democratic right.
           </p>
           <p>
-            We request the Government of Jharkhand and the relevant road authorities to
-            publish the complete tree survey, disclose applicable tree-felling
-            permissions, assess alternatives to minimise tree removal, and preserve mature
-            trees wherever technically feasible.
+            Under Section 4 of the Right to Information Act, 2005 and established principles of environmental governance, all public infrastructure projects affecting community assets must proactively disclose their detailed plans to the public domain.
           </p>
-          <p>
-            Before irreversible tree felling proceeds, we ask the authorities to make the
-            relevant project documents publicly accessible and provide a reasoned
-            response to feasible tree-preservation alternatives.
-          </p>
+          <div className="my-3 p-4 bg-emerald-50/60 rounded-xl border border-emerald-200 font-sans text-xs space-y-2 text-emerald-950 not-italic">
+            <p className="font-bold text-emerald-900 uppercase tracking-wider text-[11px]">
+              Our Specific Civic Demands:
+            </p>
+            <ol className="list-decimal pl-4 space-y-1.5 font-medium">
+              <li>
+                <strong>Proactive Publication of the DPR:</strong> Make the Detailed Project Report (DPR Volume 2: Environmental &amp; Social Impact) publicly accessible on the SHAJ / RCD portal.
+              </li>
+              <li>
+                <strong>Full Tree Enumeration Register:</strong> Disclose the official joint tree census showing the exact species, girth, health, and GPS chainage of all ~7,000 potentially affected trees.
+              </li>
+              <li>
+                <strong>Geometric Alignment Drawings (CAD/GIS):</strong> Release the exact Right-of-Way (ROW) cross-section drawings so independent engineers and arborists can verify alignment widths.
+              </li>
+              <li>
+                <strong>Adoption of Smart Green Alternatives:</strong> Incorporate mature canopy trees into divided carriageway central/lateral green medians rather than clearing the 50m–60m corridor flat.
+              </li>
+            </ol>
+          </div>
           <p className="font-semibold text-gray-900">
-            We support infrastructure planning that balances mobility, environmental
-            protection, and the long-term interests of Ranchi&apos;s residents.&quot;
+            Before irreversible chainsaws proceed, we ask the Government of Jharkhand and the State Highways Authority of Jharkhand (SHAJ) to uphold citizen transparency, publish these foundational records, and engage in open technical dialogue.&quot;
           </p>
         </div>
 
@@ -338,25 +346,39 @@ export default function PublicPetitionPage() {
             </h3>
 
             <div className="space-y-2.5 max-h-72 overflow-y-auto pr-1">
-              {supporters.map((s) => (
-                <div
-                  key={s.id}
-                  className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-between text-xs"
-                >
-                  <div>
-                    <span className="font-semibold text-gray-800 block">
-                      {s.display_name}
-                    </span>
-                    <span className="text-[11px] text-gray-500 flex items-center gap-1 mt-0.5">
-                      <MapPin className="w-3 h-3 text-emerald-700" />
-                      {s.locality}
+              {supporters.length === 0 ? (
+                <div className="text-center py-8 px-4 bg-gray-50 rounded-2xl border border-dashed border-gray-200 space-y-2">
+                  <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+                    <Heart className="w-4 h-4" />
+                  </div>
+                  <p className="text-xs font-semibold text-gray-800">
+                    Be the First Verified Signatory
+                  </p>
+                  <p className="text-[11px] text-gray-500 leading-relaxed max-w-xs mx-auto">
+                    Fill out the form on the left to inaugurate this lawful citizen petition for Ranchi&apos;s green canopy!
+                  </p>
+                </div>
+              ) : (
+                supporters.map((s) => (
+                  <div
+                    key={s.id}
+                    className="p-3 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-between text-xs"
+                  >
+                    <div>
+                      <span className="font-semibold text-gray-800 block">
+                        {s.display_name}
+                      </span>
+                      <span className="text-[11px] text-gray-500 flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3 h-3 text-emerald-700" />
+                        {s.locality}
+                      </span>
+                    </div>
+                    <span className="text-[10px] text-gray-400 font-mono">
+                      {s.submitted_at.split("T")[0]}
                     </span>
                   </div>
-                  <span className="text-[10px] text-gray-400 font-mono">
-                    {s.submitted_at.split("T")[0]}
-                  </span>
-                </div>
-              ))}
+                ))
+              )}
             </div>
           </div>
         </div>

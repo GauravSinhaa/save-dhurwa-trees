@@ -389,49 +389,8 @@ export const initialCitizenReports: CitizenReport[] = [
   },
 ];
 
-// Public Petition Signatures
-export const initialPetitionSignatures: PetitionSignature[] = [
-  {
-    id: "sig-001",
-    display_name: "Dr. R. K. Shrivastava",
-    locality: "Dhurwa, Sector 3",
-    email_hash: "anon-48392",
-    consent_given: true,
-    submitted_at: "2026-04-01T09:12:00Z",
-  },
-  {
-    id: "sig-002",
-    display_name: "Priya Tirkey",
-    locality: "Jagannathpur",
-    email_hash: "anon-59201",
-    consent_given: true,
-    submitted_at: "2026-04-02T11:45:00Z",
-  },
-  {
-    id: "sig-003",
-    display_name: "Anand Murmu",
-    locality: "HEC Colony",
-    email_hash: "anon-38291",
-    consent_given: true,
-    submitted_at: "2026-04-03T16:20:00Z",
-  },
-  {
-    id: "sig-004",
-    display_name: "Meera Soren",
-    locality: "Naya Sarai",
-    email_hash: "anon-94021",
-    consent_given: true,
-    submitted_at: "2026-04-04T10:15:00Z",
-  },
-  {
-    id: "sig-005",
-    display_name: "Rajeshwar Verma",
-    locality: "Doranda",
-    email_hash: "anon-10293",
-    consent_given: true,
-    submitted_at: "2026-04-05T12:00:00Z",
-  },
-];
+// Public Petition Signatures (Clean slate for genuine verified citizen signatories)
+export const initialPetitionSignatures: PetitionSignature[] = [];
 
 // Official Project Documents
 export const initialProjectDocuments: ProjectDocument[] = [
