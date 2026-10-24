@@ -482,6 +482,36 @@ https://savedhurwatrees.org`;
                 <span>Download Birds Poster (JPG)</span>
               </a>
             </div>
+
+            {/* Poster 3: Governance & RTI (DPR & EIA Transparency) */}
+            <div className="bg-white rounded-3xl border border-blue-200 p-6 shadow-sm space-y-4 bg-gradient-to-b from-white to-slate-50">
+              <div className="flex items-center justify-between">
+                <span className="text-xs uppercase font-bold text-blue-900 tracking-wider">
+                  Poster 3 • Governance &amp; RTI
+                </span>
+                <span className="text-[10px] bg-blue-100 text-blue-950 font-bold px-2 py-0.5 rounded-full">
+                  Transparency &amp; Accountability
+                </span>
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+                <img
+                  src="/images/dpr_transparency_poster.jpg"
+                  alt="Where is the DPR and EIA Report - Save Dhurwa Trees"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                High-impact poster demanding public release of the DPR, EIA, and official tree census under RTI.
+              </p>
+              <a
+                href="/images/dpr_transparency_poster.jpg"
+                download="Save_Dhurwa_Trees_DPR_EIA_Transparency_Poster.jpg"
+                className="w-full py-2.5 px-4 rounded-xl bg-blue-900 hover:bg-blue-950 text-white text-xs font-bold transition-colors flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download DPR &amp; EIA Poster (JPG)</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
