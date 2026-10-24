@@ -512,6 +512,36 @@ https://savedhurwatrees.org`;
                 <span>Download DPR &amp; EIA Poster (JPG)</span>
               </a>
             </div>
+
+            {/* Poster 4: Investigative Public Audit (Tender vs Missing Reports) */}
+            <div className="bg-white rounded-3xl border border-red-200 p-6 shadow-sm space-y-4 bg-gradient-to-b from-white to-red-50/20">
+              <div className="flex items-center justify-between">
+                <span className="text-xs uppercase font-bold text-red-900 tracking-wider">
+                  Poster 4 • Verified Evidence Audit
+                </span>
+                <span className="text-[10px] bg-red-100 text-red-950 font-bold px-2 py-0.5 rounded-full">
+                  Tender ID: 2026_SHAJ_111047_1
+                </span>
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+                <img
+                  src="/images/evidence_audit_poster.jpg"
+                  alt="Public Audit Evidence - Tender Awarded Reports Hidden - Save Dhurwa Trees"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Investigative audit poster citing the exact ₹177 Cr tender ID and proving that 0 environmental reports were published.
+              </p>
+              <a
+                href="/images/evidence_audit_poster.jpg"
+                download="Save_Dhurwa_Trees_Evidence_Audit_Poster.jpg"
+                className="w-full py-2.5 px-4 rounded-xl bg-red-900 hover:bg-red-950 text-white text-xs font-bold transition-colors flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Evidence Audit Poster (JPG)</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
