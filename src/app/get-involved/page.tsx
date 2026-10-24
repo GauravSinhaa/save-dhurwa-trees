@@ -80,11 +80,16 @@ export default function GetInvolvedPage() {
 
   const campaignSummary = `🌳 SAVE DHURWA TREES — Development Without Destruction.
 The proposed 10-lane road from Vivekananda School More to Ranchi Ring Road via Naya Sarai (6.089 km) could affect an estimated 7,000 mature trees.
+
+📍 GATHERING POINT: Join us near UCO Bank, Dhurwa for peaceful citizen awareness & tree documentation drive.
+🔍 NOTE: This is a lawful, scientific civic research initiative — not a protest.
+
 We advocate for:
 1. Publishing the official joint tree census.
-2. Exploring proven engineering alternatives (bypassing mature tree rows, optimizing cross-sections).
-3. Preserving Ranchi's urban green heritage for future generations.
-Explore the interactive map and sign the citizen petition:
+2. Preserving mature avenue trees wherever technically feasible.
+3. Constructive dialogue between citizens and urban planners.
+
+Explore the interactive tree map:
 https://savedhurwatrees.org`;
 
   const handleCopyShare = () => {
