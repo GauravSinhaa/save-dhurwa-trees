@@ -131,6 +131,53 @@ export default function PublicPetitionPage() {
         </p>
       </div>
 
+      {/* Featured Live Change.org Petition Hero Banner (750+ Signatures) */}
+      <div className="bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 text-gray-950 p-6 sm:p-8 rounded-3xl shadow-xl border-2 border-amber-400 space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-950/20 pb-4">
+          <div className="flex items-center gap-2.5">
+            <span className="w-3 h-3 rounded-full bg-red-600 animate-ping"></span>
+            <span className="text-xs font-black uppercase tracking-wider text-gray-900 bg-amber-200/80 px-3 py-1 rounded-full border border-amber-800/30">
+              Active Official Change.org Campaign
+            </span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-gray-950 text-white px-4 py-1.5 rounded-full text-xs font-mono font-bold shadow-md self-start sm:self-auto">
+            <Users className="w-3.5 h-3.5 text-amber-400" />
+            <span>750+ Citizens Have Signed</span>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-xl sm:text-2xl font-black text-gray-950 leading-snug">
+            &quot;Ranchi needs your support! Around 7,000 trees in the HEC–Dhurwa area are potentially at risk due to the proposed road development.&quot;
+          </h2>
+          <p className="text-xs sm:text-sm text-gray-900 leading-relaxed font-medium">
+            Please take a moment to sign this petition and share it with others. Together, we can raise our voices for sustainable development and protect Ranchi&apos;s green heritage, biodiversity, and natural environment. Every signature matters. Please support this cause. 💚
+          </p>
+        </div>
+
+        <div className="pt-2 flex flex-wrap items-center gap-4">
+          <a
+            href="https://c.org/sTJg4xx2Vz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-gray-950 hover:bg-gray-900 text-amber-400 font-extrabold text-sm transition-all shadow-xl hover:shadow-2xl hover:scale-105 border border-amber-400/50"
+          >
+            <span>✍️ Sign the Official Petition on Change.org</span>
+            <span className="text-xs bg-amber-400 text-gray-950 px-2 py-0.5 rounded-full font-black">750+ Signed</span>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?text=Ranchi%20needs%20your%20support!%20Around%207%2C000%20trees%20in%20the%20HEC%E2%80%93Dhurwa%20area%20are%20potentially%20at%20risk%20due%20to%20the%20proposed%20road%20development.%20%0A%0A%E2%9C%8D%EF%B8%8F%20Sign%20the%20petition%20(750%2B%20signed)%3A%20https%3A%2F%2Fc.org%2FsTJg4xx2Vz%20%0A%0ATogether%2C%20we%20can%20raise%20our%20voices%20for%20sustainable%20development%20and%20protect%20Ranchi%27s%20green%20heritage%2C%20biodiversity%20and%20natural%20environment.%20Every%20signature%20matters.%20Please%20support%20this%20cause.%20%F0%9F%92%9A"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-white/30 hover:bg-white/40 text-gray-950 font-bold text-xs backdrop-blur-md transition-all border border-gray-950/20 shadow-sm"
+          >
+            <Share2 className="w-3.5 h-3.5" />
+            <span>Share Petition on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
       {/* Main Petition Text Card */}
       <div className="bg-white rounded-3xl border border-[#e2dfd4] p-6 sm:p-10 shadow-sm space-y-6">
         <div className="border-b border-gray-200 pb-4 flex items-center justify-between">
@@ -326,16 +373,29 @@ export default function PublicPetitionPage() {
         {/* Right: Live Supporter Counter & Feed */}
         <div className="lg:col-span-5 space-y-6">
           {/* Counter card */}
-          <div className="bg-[#1b4332] text-white p-6 rounded-3xl shadow-md border border-[#2d6a4f]/50">
-            <span className="text-xs uppercase font-bold text-emerald-300 tracking-wider">
-              Total Validated Supporters
-            </span>
-            <div className="text-4xl font-extrabold font-mono mt-1 text-white">
-              {totalCount}
+          <div className="bg-[#1b4332] text-white p-6 rounded-3xl shadow-md border border-[#2d6a4f]/50 space-y-4">
+            <div>
+              <span className="text-xs uppercase font-bold text-emerald-300 tracking-wider">
+                Total Collective Supporters
+              </span>
+              <div className="text-4xl font-extrabold font-mono mt-1 text-white flex items-baseline gap-2">
+                <span>{(750 + totalCount).toLocaleString()}</span>
+                <span className="text-xs text-amber-300 font-sans font-bold">Signatures &amp; Rising</span>
+              </div>
+              <p className="text-xs text-emerald-100/80 mt-2">
+                Including <strong>750+ verified signers on Change.org</strong> plus on-site civic declarations.
+              </p>
             </div>
-            <p className="text-xs text-gray-300 mt-2">
-              Citizen signatures verified against duplicate email records.
-            </p>
+
+            <a
+              href="https://c.org/sTJg4xx2Vz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-gray-950 font-extrabold text-xs transition-colors flex items-center justify-center gap-1.5 shadow-md"
+            >
+              <span>View &amp; Sign on Change.org</span>
+              <span>↗</span>
+            </a>
           </div>
 
           {/* Recent Supporters List */}

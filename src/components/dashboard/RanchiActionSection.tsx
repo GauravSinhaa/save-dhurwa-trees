@@ -80,13 +80,16 @@ Platform URL: https://savedhurwatrees.org/dashboard
   };
 
   const shareText = encodeURIComponent(
-    `🚨 Save Ranchi — Save Our Trees!
-Over 34,000 mature heritage trees have been cut in Ranchi since 2019, causing city AQI to spike by 66% (CPCB records). 
+    `🚨 Ranchi needs your support! 
+Around 7,000 trees in the HEC–Dhurwa area are potentially at risk due to the proposed road development. Please take a moment to sign this petition and share it with others. 
 
-From Morabadi to HEC, Kanke to Harmu, check your area's loss on the interactive citywide dashboard:
+✍️ Sign the petition (750+ citizens already signed):
+https://c.org/sTJg4xx2Vz
+
+Explore the Citywide Tree & AQI Evidence Dashboard:
 https://savedhurwatrees.org/dashboard
 
-Sign the citizen petition and report tree cutting in your locality now!`
+Together, we can raise our voices for sustainable development and protect Ranchi's green heritage, biodiversity and natural environment. Every signature matters. Please support this cause. 💚`
   );
 
   const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}`;
@@ -109,23 +112,38 @@ Sign the citizen petition and report tree cutting in your locality now!`
       {/* 5 Action Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
         {/* Card 1: Sign Petition */}
-        <div className="bg-white p-6 rounded-2xl border border-amber-300 shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md transition-all group">
+        <div className="bg-gradient-to-br from-amber-50 to-amber-100/70 p-6 rounded-2xl border-2 border-amber-400 shadow-md flex flex-col justify-between space-y-4 hover:shadow-lg transition-all group">
           <div className="space-y-2.5">
-            <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <FileCheck className="w-6 h-6 text-amber-700" />
+            <div className="flex items-center justify-between">
+              <div className="w-12 h-12 rounded-xl bg-amber-200 text-amber-950 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <FileCheck className="w-6 h-6 text-amber-900" />
+              </div>
+              <span className="text-[10px] font-black uppercase tracking-wider bg-amber-500 text-gray-950 px-2.5 py-1 rounded-full shadow-sm animate-pulse">
+                750+ Signed
+              </span>
             </div>
-            <h3 className="font-bold text-lg text-gray-900">1. Sign the Citizen Petition</h3>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Join thousands of Ranchi residents calling for transparent public consultations, alignment revisions, and tree-sparing roadway design.
+            <h3 className="font-extrabold text-lg text-gray-950">1. Sign the Citizen Petition</h3>
+            <p className="text-xs text-gray-800 leading-relaxed">
+              &quot;Around 7,000 trees in the HEC–Dhurwa area are potentially at risk. Together, we can protect Ranchi&apos;s green heritage and biodiversity.&quot;
             </p>
           </div>
-          <Link
-            href="/petition"
-            className="inline-flex items-center justify-between px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold text-xs transition-colors shadow-sm"
-          >
-            <span>Add Your Signature Online</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="space-y-2 pt-2">
+            <a
+              href="https://c.org/sTJg4xx2Vz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-gray-950 hover:bg-gray-900 text-amber-400 font-extrabold text-xs transition-colors shadow-sm"
+            >
+              <span>✍️ Sign on Change.org (750+ Signed)</span>
+              <span>↗</span>
+            </a>
+            <Link
+              href="/petition"
+              className="inline-flex items-center justify-center w-full px-4 py-1.5 rounded-lg text-gray-700 hover:text-gray-950 font-semibold text-[11px] transition-colors"
+            >
+              <span>Read Full Statutory Demands</span>
+            </Link>
+          </div>
         </div>
 
         {/* Card 2: Report Tree Cutting */}

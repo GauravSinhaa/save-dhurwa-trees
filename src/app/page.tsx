@@ -264,27 +264,40 @@ export default function HomePage() {
           </div>
 
           {/* Box 2: Sign Public Petition */}
-          <div className="bg-[#fcfbf7] p-8 rounded-3xl border border-amber-300/80 shadow-sm flex flex-col justify-between space-y-6">
+          <div className="bg-[#fcfbf7] p-8 rounded-3xl border-2 border-amber-400 shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center">
-                <FileCheck className="w-6 h-6" />
+              <div className="flex items-center justify-between">
+                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center">
+                  <FileCheck className="w-6 h-6" />
+                </div>
+                <span className="text-xs font-black bg-amber-500 text-gray-950 px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">
+                  750+ Signed
+                </span>
               </div>
               <h3 className="text-xl font-bold text-gray-900">
                 Sign the Citizen Petition for Smarter Planning
               </h3>
-              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                Join fellow Ranchi residents in calling upon the road authorities to disclose
-                tree surveys, conduct transparent public consultations, and protect mature
-                trees before irreversible cutting occurs.
+              <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                &quot;Around 7,000 trees in the HEC–Dhurwa area are potentially at risk due to the proposed road development. Join over 750 citizens on Change.org calling upon road authorities to conduct transparent consultations and protect mature trees.&quot;
               </p>
             </div>
-            <Link
-              href="/petition"
-              className="inline-flex items-center justify-between px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold text-xs transition-colors"
-            >
-              <span>Add Your Name to the Petition</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="space-y-2">
+              <a
+                href="https://c.org/sTJg4xx2Vz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-between w-full px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-gray-950 font-black text-xs transition-colors shadow-sm"
+              >
+                <span>✍️ Sign on Change.org (750+ Signatures)</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <Link
+                href="/petition"
+                className="inline-flex items-center justify-center w-full text-xs font-semibold text-gray-600 hover:text-gray-900 py-1"
+              >
+                <span>Read Full Petition &amp; Civic Registry</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

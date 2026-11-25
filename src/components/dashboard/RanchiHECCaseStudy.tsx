@@ -54,14 +54,26 @@ export const RanchiHECCaseStudy: React.FC = () => {
             </p>
           </div>
 
-          <Link
-            href="/map"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#2d6a4f] hover:bg-[#1b4332] text-white text-xs font-semibold border border-emerald-400/40 transition-all self-start md:self-auto shadow-md"
-          >
-            <Compass className="w-4 h-4 text-emerald-300" />
-            <span>Open HEC 6-km Corridor GIS Map</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-2 self-start md:self-auto">
+            <a
+              href="https://c.org/sTJg4xx2Vz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 text-xs font-black transition-all shadow-md hover:scale-105"
+            >
+              <span>✍️ Sign Petition (750+ Signed)</span>
+              <span>↗</span>
+            </a>
+
+            <Link
+              href="/map"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#2d6a4f] hover:bg-[#1b4332] text-white text-xs font-semibold border border-emerald-400/40 transition-all shadow-md"
+            >
+              <Compass className="w-4 h-4 text-emerald-300" />
+              <span>HEC GIS Map</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
 
         {/* 5 Impact Metrics */}
