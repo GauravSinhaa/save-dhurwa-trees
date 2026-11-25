@@ -26,6 +26,7 @@ export const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const navLinks = [
+    { href: "/dashboard", label: language === "hi" ? "🚨 राँची डैशबोर्ड" : "🚨 Save Ranchi Dashboard", icon: BarChart3, highlight: true },
     { href: "/", label: t.nav.home, icon: Trees },
     { href: "/project", label: t.nav.project, icon: AlertTriangle },
     { href: "/map", label: t.nav.map, icon: MapPin },
@@ -117,12 +118,17 @@ export const Navbar: React.FC = () => {
           <nav className="hidden xl:flex items-center space-x-1">
             {navLinks.map((link) => {
               const active = pathname === link.href;
+              const isHighlight = (link as any).highlight;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
-                    active
+                  className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-all ${
+                    isHighlight
+                      ? active
+                        ? "bg-red-600 text-white font-bold shadow-md ring-2 ring-red-400"
+                        : "bg-red-950/80 hover:bg-red-900 text-red-200 border border-red-500/50 shadow-sm animate-pulse"
+                      : active
                       ? "bg-[#2d6a4f] text-white shadow-sm"
                       : "text-gray-200 hover:text-white hover:bg-[#2d6a4f]/50"
                   }`}

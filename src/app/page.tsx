@@ -22,6 +22,7 @@ import {
   Clock,
   Sparkles,
   ExternalLink,
+  BarChart3,
 } from "lucide-react";
 import { AvianImpactSection } from "@/components/biodiversity/AvianImpactSection";
 import { GrassrootsSpotlight } from "@/components/community/GrassrootsSpotlight";
@@ -66,6 +67,18 @@ export default function HomePage() {
 
           {/* Action CTAs */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/dashboard"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm transition-all shadow-xl hover:shadow-red-900/50 hover:-translate-y-0.5 border border-red-400 animate-pulse"
+            >
+              <BarChart3 className="w-4 h-4 text-white" />
+              <span>
+                {language === "hi"
+                  ? "🚨 सावे राँची डैशबोर्ड (संपूर्ण शहर)"
+                  : "🚨 Save Ranchi Dashboard (Citywide)"}
+              </span>
+            </Link>
+
             <Link
               href="/map"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#2d6a4f] hover:bg-[#1b4332] text-white font-semibold text-sm transition-all shadow-lg hover:shadow-emerald-900/50 hover:-translate-y-0.5 border border-[#52b788]/40"

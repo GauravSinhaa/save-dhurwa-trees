@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large local raw assets & zip files
+*.zip
+*.docx
+*.pdf
+/2026_SHAJ_111047_1/
+/Images and Videos/
+

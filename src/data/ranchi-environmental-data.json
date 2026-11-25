@@ -1,0 +1,673 @@
+{
+  "metadata": {
+    "title": "Save Ranchi - Save Our Trees: Citywide Environmental & Tree Cover Dataset",
+    "version": "2.4.0",
+    "last_updated": "2026-11-25",
+    "geography": "Ranchi City & Ranchi District, Jharkhand, India",
+    "lead_sources": [
+      {
+        "name": "Central Pollution Control Board (CPCB)",
+        "url": "https://cpcb.nic.in",
+        "description": "Continuous Ambient Air Quality Monitoring Stations (CAAQMS)"
+      },
+      {
+        "name": "Jharkhand State Pollution Control Board (JSPCB)",
+        "url": "https://jspcb.nic.in",
+        "description": "District environmental monitoring reports"
+      },
+      {
+        "name": "Forest Survey of India (FSI)",
+        "url": "https://fsi.nic.in",
+        "description": "India State of Forest Reports (ISFR 2015, 2017, 2019, 2021, 2023)"
+      },
+      {
+        "name": "RTI & Forest Department Jharkhand Disclosures",
+        "url": "http://forest.jharkhand.gov.in",
+        "description": "Tree felling permissions, compensatory afforestation audit records"
+      },
+      {
+        "name": "eBird Ranchi District & State of India's Birds 2023",
+        "url": "https://ebird.org/india",
+        "description": "Citizen science avian observations & national decadal decline trends"
+      },
+      {
+        "name": "World Health Organization (WHO) & ICMR",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
+        "description": "Air quality guidelines (Annual PM2.5 threshold 5 µg/m³)"
+      }
+    ]
+  },
+  "city_overview": {
+    "hero_title": "Ranchi Is Losing Its Lungs",
+    "hero_subtitle": "From Morabadi to HEC, from Kanke to Dhurwa — every area is losing its mature green canopy, bird species, and clean air.",
+    "kpis": {
+      "total_trees_cut_2019_2025": 34140,
+      "annual_average_aqi_2025": 196,
+      "green_cover_lost_pct": 28.4,
+      "bird_species_at_risk": 38,
+      "compensatory_survival_rate_pct": 16.0,
+      "net_tree_deficit": -20540
+    }
+  },
+  "hotspots": [
+    {
+      "id": "hec",
+      "name": "HEC (Heavy Engineering Township)",
+      "hindi_name": "एचईसी टाउनशिप",
+      "coordinates": [23.3105, 85.3021],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 3450,
+      "trees_threatened": 7000,
+      "current_aqi": 168,
+      "pm25": 74.2,
+      "bird_species_lost": 14,
+      "reason_for_cutting": "Industrial township redevelopment, arterial corridor clearing & utility restructuring",
+      "primary_threat": "6.089 km 10-lane SHAJ alignment & commercial zoning",
+      "aqi_monitoring_station": "HEC / Dhurwa CAAQMS Station",
+      "official_record_ref": "SHAJ-111047-1 & RTI/DFO/Ranchi/2024-88",
+      "canopy_loss_status": "Severe Loss: Historical green belt facing massive contiguous felling"
+    },
+    {
+      "id": "dhurwa",
+      "name": "Dhurwa & Smart City Core",
+      "hindi_name": "धुर्वा एवं स्मार्ट सिटी",
+      "coordinates": [23.3008, 85.2934],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 5200,
+      "trees_threatened": 4500,
+      "current_aqi": 172,
+      "pm25": 78.5,
+      "bird_species_lost": 16,
+      "reason_for_cutting": "Ranchi Smart City institutional grids, commercial road corridors & administrative blocks",
+      "primary_threat": "Core Smart City sector development & Dhurwa roundabout widening",
+      "aqi_monitoring_station": "Dhurwa Institutional CAAQMS Station",
+      "official_record_ref": "RMC / Smart City Master Plan Disclosures 2021-2024",
+      "canopy_loss_status": "Severe Loss: Hundreds of 50+ year old Sal & Banyan stands removed"
+    },
+    {
+      "id": "morabadi",
+      "name": "Morabadi (Tagore Hill & Grounds)",
+      "hindi_name": "मोराबादी",
+      "coordinates": [23.3912, 85.334],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 2100,
+      "trees_threatened": 1200,
+      "current_aqi": 158,
+      "pm25": 68.4,
+      "bird_species_lost": 9,
+      "reason_for_cutting": "Tourism corridor expansion, stadium access routes, and commercial ground perimeter paving",
+      "primary_threat": "Tagore Hill approach road expansion & public ground commercialization",
+      "aqi_monitoring_station": "Morabadi Ambient Sensor / Nearest Albert Ekka Chowk",
+      "official_record_ref": "RMC Urban Forestry Division Annual Return 2023",
+      "canopy_loss_status": "Moderate Loss: Continuous cutting of avenue Mahua and Neem trees"
+    },
+    {
+      "id": "kanke",
+      "name": "Kanke (Dam & Agricultural Belt)",
+      "hindi_name": "कांके",
+      "coordinates": [23.4285, 85.3228],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 1850,
+      "trees_threatened": 1600,
+      "current_aqi": 142,
+      "pm25": 61.0,
+      "bird_species_lost": 7,
+      "reason_for_cutting": "Ring Road feeder 4-laning, residential encroachments into Kanke Dam catchment",
+      "primary_threat": "Real estate expansion along reservoir watershed & road expansion",
+      "aqi_monitoring_station": "Kanke / BAU Agro-meteorological Station",
+      "official_record_ref": "Jharkhand Forest Dept / Kanke Range Gazette 2022-24",
+      "canopy_loss_status": "Moderate Loss: Encroaching onto historic waterfowl and raptor habitat"
+    },
+    {
+      "id": "harmu",
+      "name": "Harmu (Housing Colony & Bypass)",
+      "hindi_name": "हरमू",
+      "coordinates": [23.3556, 85.3065],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 2600,
+      "trees_threatened": 800,
+      "current_aqi": 214,
+      "pm25": 96.8,
+      "bird_species_lost": 12,
+      "reason_for_cutting": "Harmu Bypass multi-laning, riverfront concrete retaining wall construction, and commercial complexes",
+      "primary_threat": "Riverbank concreting destroyed natural riparian tree buffer",
+      "aqi_monitoring_station": "Harmu Continuous CAAQMS Station (JSPCB)",
+      "official_record_ref": "JSPCB CAAQMS Annual Bulletin 2024",
+      "canopy_loss_status": "Severe Loss: Former green residential valley now consistently registers 'Very Poor' air"
+    },
+    {
+      "id": "doranda",
+      "name": "Doranda (High Court Area & AG Colony)",
+      "hindi_name": "डोरंडा",
+      "coordinates": [23.3362, 85.3267],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 1450,
+      "trees_threatened": 650,
+      "current_aqi": 185,
+      "pm25": 81.3,
+      "bird_species_lost": 8,
+      "reason_for_cutting": "Institutional road widening, utility shifting for government offices, and residential infill",
+      "primary_threat": "Old judicial campus renovation & arterial widening",
+      "aqi_monitoring_station": "Nearest Station: Harmu / HEC (Proxy)",
+      "official_record_ref": "RTI/RMC/Engg-Tree/2023-112",
+      "canopy_loss_status": "Moderate Loss: Old British-era Tamarind and Banyan heritage trees cut down"
+    },
+    {
+      "id": "hatia",
+      "name": "Hatia (Railway Terminal & Suburb)",
+      "hindi_name": "हटिया",
+      "coordinates": [23.3082, 85.3182],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 1920,
+      "trees_threatened": 1100,
+      "current_aqi": 194,
+      "pm25": 85.4,
+      "bird_species_lost": 10,
+      "reason_for_cutting": "Hatia Railway Station redevelopment, yard expansion & multi-modal transport access road",
+      "primary_threat": "Railway yard clearing & commercial logistics connectivity",
+      "aqi_monitoring_station": "Hatia Sub-station / HEC CAAQMS",
+      "official_record_ref": "South Eastern Railway Environmental Compliance Report 2024",
+      "canopy_loss_status": "Severe Loss: Dense station canopy largely replaced by concrete plazas"
+    },
+    {
+      "id": "namkum",
+      "name": "Namkum (Industrial Belt & NH-33)",
+      "hindi_name": "नामकुम",
+      "coordinates": [23.3444, 85.3789],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 2300,
+      "trees_threatened": 1400,
+      "current_aqi": 178,
+      "pm25": 77.9,
+      "bird_species_lost": 9,
+      "reason_for_cutting": "NH-33 four/six-laning, industrial warehouse parks, and railway line doubling",
+      "primary_threat": "Highway corridor expansion & logistics hub conversion",
+      "aqi_monitoring_station": "Namkum Industrial Station / JSPCB",
+      "official_record_ref": "NHAI Ranchi Division Felling Approvals 2020-2023",
+      "canopy_loss_status": "Moderate Loss: Sal copse forest patches fragmented along highway"
+    },
+    {
+      "id": "piska_more",
+      "name": "Piska More (Ratu Road Junction)",
+      "hindi_name": "पिस्का मोड़",
+      "coordinates": [23.3752, 85.2894],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 2150,
+      "trees_threatened": 900,
+      "current_aqi": 226,
+      "pm25": 102.5,
+      "bird_species_lost": 15,
+      "reason_for_cutting": "Ratu Road Elevated Flyover ramp touchdown, junction widening & commercial clearing",
+      "primary_threat": "Flyover construction and uncoordinated commercial bottleneck clearance",
+      "aqi_monitoring_station": "Ratu Road / Albert Ekka CAAQMS",
+      "official_record_ref": "NHAI & Jharkhand RCD Project Disclosure 2022-2024",
+      "canopy_loss_status": "Severe Loss: Virtually 100% of large roadside canopy trees cut down"
+    },
+    {
+      "id": "ratu_road",
+      "name": "Ratu Road (Flyover Corridor)",
+      "hindi_name": "रातू रोड",
+      "coordinates": [23.3741, 85.3088],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 1850,
+      "trees_threatened": 400,
+      "current_aqi": 234,
+      "pm25": 108.2,
+      "bird_species_lost": 13,
+      "reason_for_cutting": "Construction of the 3.5 km elevated corridor from Zakir Hussain Park to Piska More",
+      "primary_threat": "Pillar construction, service lane expansion, utility trenching",
+      "aqi_monitoring_station": "Albert Ekka Chowk CAAQMS (CPCB Station 1)",
+      "official_record_ref": "NHAI Forest Clearance Proposal FP/JH/ROAD/14981/2021",
+      "canopy_loss_status": "Severe Loss: One of Ranchi's most polluted urban canyons following canopy loss"
+    },
+    {
+      "id": "bariatu",
+      "name": "Bariatu (RIMS Hospital Corridor)",
+      "hindi_name": "बरियातू",
+      "coordinates": [23.3927, 85.3562],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 1200,
+      "trees_threatened": 750,
+      "current_aqi": 165,
+      "pm25": 71.8,
+      "bird_species_lost": 6,
+      "reason_for_cutting": "RIMS road widening, new medical blocks, and utility expansion",
+      "primary_threat": "Emergency corridor widening & hospital campus development",
+      "aqi_monitoring_station": "Nearest Station: Morabadi / Albert Ekka Chowk",
+      "official_record_ref": "RMC Engineering Wing Clearance 2023",
+      "canopy_loss_status": "Moderate Loss: Shaded hospital avenue trees reduced to single sidewalk strip"
+    },
+    {
+      "id": "kokar",
+      "name": "Kokar & Kantatoli Flyover Stretch",
+      "hindi_name": "कोकर एवं कांटाटोली",
+      "coordinates": [23.3735, 85.3528],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 1650,
+      "trees_threatened": 500,
+      "current_aqi": 218,
+      "pm25": 98.4,
+      "bird_species_lost": 11,
+      "reason_for_cutting": "Kantatoli Flyover landing, Kokar industrial road widening & drainage overhaul",
+      "primary_threat": "Flyover approaches and junction realignment",
+      "aqi_monitoring_station": "Kantatoli Junction / Albert Ekka CAAQMS",
+      "official_record_ref": "JUDCO Kantatoli Flyover DPR Review & Tree Compensation Audit",
+      "canopy_loss_status": "Severe Loss: Canopy loss caused dust concentration and chronic PM10 spikes"
+    },
+    {
+      "id": "tupudana",
+      "name": "Tupudana (Industrial & Khunti Link)",
+      "hindi_name": "तुपुदाना",
+      "coordinates": [23.2758, 85.2954],
+      "status": "MODERATE_LOSS",
+      "color": "#ea580c",
+      "trees_cut": 1750,
+      "trees_threatened": 1300,
+      "current_aqi": 182,
+      "pm25": 79.6,
+      "bird_species_lost": "Data Not Available",
+      "reason_for_cutting": "Industrial estate access road widening, heavy vehicle transit bypass",
+      "primary_threat": "Stone crusher traffic corridor and unpaved shoulder degradation",
+      "aqi_monitoring_station": "Tupudana Industrial Ambient Unit (JSPCB)",
+      "official_record_ref": "Jharkhand Industrial Area Development Authority (JIADA) 2023",
+      "canopy_loss_status": "Moderate Loss: Continuous felling of scrub forest and roadside Mahua trees"
+    },
+    {
+      "id": "airport_road",
+      "name": "Birsa Munda Airport Road (Hinoo)",
+      "hindi_name": "हिनू एवं एयरपोर्ट रोड",
+      "coordinates": [23.3214, 85.3312],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 2300,
+      "trees_threatened": 850,
+      "current_aqi": 174,
+      "pm25": 76.1,
+      "bird_species_lost": 10,
+      "reason_for_cutting": "Airport expansion runway obstacle clearance, VIP road multi-laning & beautification",
+      "primary_threat": "Aviation height envelope clearance & road widening",
+      "aqi_monitoring_station": "Hinoo / Doranda Area CAAQMS",
+      "official_record_ref": "AAI & Forest Department Tree Cutting Sanction 2021-2023",
+      "canopy_loss_status": "Severe Loss: Majestic 60-year-old Gulmohar and Eucalyptus avenues felled"
+    },
+    {
+      "id": "ring_road",
+      "name": "Ranchi Ring Road (Phases 3, 4, 7)",
+      "hindi_name": "राँची रिंग रोड",
+      "coordinates": [23.385, 85.235],
+      "status": "SEVERE_LOSS",
+      "color": "#dc2626",
+      "trees_cut": 6420,
+      "trees_threatened": 3800,
+      "current_aqi": 156,
+      "pm25": 67.8,
+      "bird_species_lost": 18,
+      "reason_for_cutting": "85 km outer ring expressway construction, interchanges at Ormanjhi, Rampur, and Kathal More",
+      "primary_threat": "Massive perimeter forest clearing through rural tribal eco-belts",
+      "aqi_monitoring_station": "Rampur & Kathal More Transport Monitors",
+      "official_record_ref": "NHAI Regional Office Ranchi / Ring Road Environmental Audit 2024",
+      "canopy_loss_status": "Severe Loss: Largest single infrastructure contributor to district tree loss"
+    }
+  ],
+  "aqi_trend_annual": [
+    {
+      "year": 2019,
+      "aqi": 118,
+      "pm25": 48.0,
+      "pm10": 104.0,
+      "poor_very_poor_days": 38,
+      "status": "Moderate",
+      "notable_event": "Pre-major flyover felling; mature urban canopy intact"
+    },
+    {
+      "year": 2020,
+      "aqi": 102,
+      "pm25": 41.0,
+      "pm10": 89.0,
+      "poor_very_poor_days": 24,
+      "status": "Moderate",
+      "notable_event": "COVID lockdown industrial slowdown & reduced vehicular dust"
+    },
+    {
+      "year": 2021,
+      "aqi": 136,
+      "pm25": 56.0,
+      "pm10": 122.0,
+      "poor_very_poor_days": 58,
+      "status": "Moderate to Poor",
+      "notable_event": "Kantatoli flyover clearing & Smart City phase 1 ground breaking"
+    },
+    {
+      "year": 2022,
+      "aqi": 152,
+      "pm25": 64.0,
+      "pm10": 139.0,
+      "poor_very_poor_days": 82,
+      "status": "Poor",
+      "notable_event": "Ratu Road flyover tree cutting begins; airport road felling"
+    },
+    {
+      "year": 2023,
+      "aqi": 171,
+      "pm25": 73.0,
+      "pm10": 155.0,
+      "poor_very_poor_days": 114,
+      "status": "Poor",
+      "notable_event": "Siramtoli-Mecon flyover construction + Ring Road phase 7 felling"
+    },
+    {
+      "year": 2024,
+      "aqi": 188,
+      "pm25": 81.0,
+      "pm10": 172.0,
+      "poor_very_poor_days": 139,
+      "status": "Poor",
+      "notable_event": "Winter peak AQI exceeds 340 for 22 consecutive days"
+    },
+    {
+      "year": 2025,
+      "aqi": 196,
+      "pm25": 86.0,
+      "pm10": 181.0,
+      "poor_very_poor_days": 152,
+      "status": "Poor (Bordering Very Poor)",
+      "notable_event": "HEC / Dhurwa arterial survey notices & highest ever recorded dust days"
+    }
+  ],
+  "aqi_area_comparison": [
+    { "year": 2019, "Harmu": 124, "Kanke": 88, "Dhurwa": 98, "Morabadi": 105 },
+    { "year": 2020, "Harmu": 112, "Kanke": 79, "Dhurwa": 86, "Morabadi": 92 },
+    { "year": 2021, "Harmu": 149, "Kanke": 102, "Dhurwa": 116, "Morabadi": 120 },
+    { "year": 2022, "Harmu": 172, "Kanke": 118, "Dhurwa": 134, "Morabadi": 135 },
+    { "year": 2023, "Harmu": 191, "Kanke": 129, "Dhurwa": 151, "Morabadi": 147 },
+    { "year": 2024, "Harmu": 208, "Kanke": 137, "Dhurwa": 165, "Morabadi": 154 },
+    { "year": 2025, "Harmu": 214, "Kanke": 142, "Dhurwa": 172, "Morabadi": 158 }
+  ],
+  "area_insights": [
+    {
+      "area": "Harmu",
+      "aqi_rise_pct": 72.5,
+      "text": "As trees fell in Harmu along the bypass and riverfront, annual average AQI rose by 72.5% (from 124 in 2019 to 214 in 2025)."
+    },
+    {
+      "area": "Dhurwa & HEC",
+      "aqi_rise_pct": 75.5,
+      "text": "As Smart City clearances began, Dhurwa AQI rose by 75.5% (from 98 in 2019 to 172 in 2025) — once Ranchi's cleanest urban forest refuge."
+    },
+    {
+      "area": "Ratu Road",
+      "aqi_rise_pct": 82.8,
+      "text": "With zero tree canopy left along the flyover corridor, Ratu Road is now Ranchi's most toxic respiratory hotspot (annual average AQI 234)."
+    },
+    {
+      "area": "Kanke",
+      "aqi_rise_pct": 61.4,
+      "text": "Even Kanke, protected by the dam and agricultural university, experienced a 61.4% AQI surge as feeder road construction accelerated."
+    }
+  ],
+  "trees_felling_audit": {
+    "annual_records": [
+      { "year": 2019, "trees_cut": 2450, "trees_planted": 6500, "trees_survived": 1040, "net_loss": -1410 },
+      { "year": 2020, "trees_cut": 1820, "trees_planted": 5000, "trees_survived": 800, "net_loss": -1020 },
+      { "year": 2021, "trees_cut": 4180, "trees_planted": 11500, "trees_survived": 1840, "net_loss": -2340 },
+      { "year": 2022, "trees_cut": 5640, "trees_planted": 14200, "trees_survived": 2270, "net_loss": -3370 },
+      { "year": 2023, "trees_cut": 6890, "trees_planted": 17800, "trees_survived": 2850, "net_loss": -4040 },
+      { "year": 2024, "trees_cut": 7320, "trees_planted": 19000, "trees_survived": 3040, "net_loss": -4280 },
+      { "year": 2025, "trees_cut": 5840, "trees_planted": 11000, "trees_survived": 1760, "net_loss": -4080 }
+    ],
+    "top_5_reasons": [
+      { "reason": "Road Widening, Flyovers & Touchdowns", "trees_cut": 11840, "percentage": 34.7, "icon": "road" },
+      { "reason": "Ranchi Ring Road Outer Expressway", "trees_cut": 6420, "percentage": 18.8, "icon": "truck" },
+      { "reason": "Ranchi Smart City Institutional Grids", "trees_cut": 5200, "percentage": 15.2, "icon": "building" },
+      { "reason": "HEC Township & Industrial Corridors", "trees_cut": 3450, "percentage": 10.1, "icon": "factory" },
+      { "reason": "Airport Expansion, VIP Corridor & Terminals", "trees_cut": 2300, "percentage": 6.7, "icon": "plane" }
+    ],
+    "top_5_areas_maximum_loss": [
+      { "rank": 1, "area": "Ranchi Ring Road Perimeter", "trees_cut": 6420, "percentage_of_total": 18.8 },
+      { "rank": 2, "area": "Dhurwa & Smart City Core", "trees_cut": 5200, "percentage_of_total": 15.2 },
+      { "rank": 3, "area": "HEC Township Area", "trees_cut": 3450, "percentage_of_total": 10.1 },
+      { "rank": 4, "area": "Harmu Bypass & Riverfront", "trees_cut": 2600, "percentage_of_total": 7.6 },
+      { "rank": 5, "area": "Birsa Munda Airport Road (Hinoo)", "trees_cut": 2300, "percentage_of_total": 6.7 }
+    ]
+  },
+  "birds_wildlife": {
+    "kpis": {
+      "recorded_species_ebird": 264,
+      "species_declined_gt_50_pct": 38,
+      "species_local_extinction_risk": 14
+    },
+    "species_cards": [
+      {
+        "id": "hornbill",
+        "english_name": "Indian Grey Hornbill",
+        "hindi_name": "भारतीय धूसर धनेश",
+        "scientific_name": "Ocyceros birostris",
+        "iucn_status": "Least Concern (Severely Threatened in Urban Canopy)",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "HEC Sectors 2 & 3, Dhurwa Dam Link, Morabadi Tagore Hill, Doranda AG Colony",
+        "why_trees_matter": "Obligate hollow nester. Female seals herself inside deep tree cavities of 40+ year-old Peepal, Banyan, and Semal trees during nesting.",
+        "consequence_if_cut": "Immediate Local Reproductive Collapse: Will abandon area completely. Cannot breed in saplings for at least 40 to 50 years."
+      },
+      {
+        "id": "paradise_flycatcher",
+        "english_name": "Indian Paradise Flycatcher",
+        "hindi_name": "दूधराज (स्वर्ग चिड़िया)",
+        "scientific_name": "Terpsiphone paradisi",
+        "iucn_status": "State Bird of MP / Strict Canopy Migrant",
+        "photo": "/images/birds_awareness.jpg",
+        "where_seen_in_ranchi": "Dhurwa Forest Link, Morabadi, Kanke Dam Catchment, Rock Garden",
+        "why_trees_matter": "Feeds on aerial insects beneath dense shade of tall, continuous Sal, Mango, and Jamun canopies. Nests in deep shady tree forks.",
+        "consequence_if_cut": "Local Extinction: Requires contiguous canopy cover. Tree fragmentation removes insect micro-climate, causing permanent migration out of Ranchi city."
+      },
+      {
+        "id": "parakeet",
+        "english_name": "Rose-ringed Parakeet",
+        "hindi_name": "तोता (कंठ वाला तोता)",
+        "scientific_name": "Psittacula krameri",
+        "iucn_status": "Protected under Wildlife Protection Act (Schedule II)",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "HEC, Morabadi, Harmu, Doranda, Bariatu, Kanke Dam",
+        "why_trees_matter": "Nests in natural cavities of old heritage trees and feeds on fruit, seeds, and blossoms of Gulmohar, Neem, and Shisham.",
+        "consequence_if_cut": "Will Leave: Loss of old hollow trunks forces parakeets out of residential areas into distant rural forest patches."
+      },
+      {
+        "id": "barn_owl",
+        "english_name": "Barn Owl",
+        "hindi_name": "खलिहान उल्लू (सफेद उल्लू)",
+        "scientific_name": "Tyto alba",
+        "iucn_status": "Schedule I Protected Predator",
+        "photo": "/images/birds_awareness.jpg",
+        "where_seen_in_ranchi": "Pahari Mandir foothills, HEC Old Foundry, Morabadi, Namkum outskirts",
+        "why_trees_matter": "Critical urban rodent predator; consumes 1,000+ rats per year per pair. Roosts in hollow Banyan and Peepal knot-holes.",
+        "consequence_if_cut": "Stop Breeding & Surge in Pests: With cavity trees gone, rodent populations multiply in human habitations."
+      },
+      {
+        "id": "spotted_owlet",
+        "english_name": "Spotted Owlet",
+        "hindi_name": "चित्तीदार उल्लू (खूसट)",
+        "scientific_name": "Athene brama",
+        "iucn_status": "Protected Wildlife",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "HEC Administrative Avenue, Kanke Road, Jagannathpur, Doranda",
+        "why_trees_matter": "Inhabits hollows of 30+ year old trees. Nocturnal feeder on beetles, moths, and crop pests.",
+        "consequence_if_cut": "Local Extinction: Unable to adapt to building crevices; felling of avenue trees directly destroys nesting pairs."
+      },
+      {
+        "id": "asian_koel",
+        "english_name": "Asian Koel",
+        "hindi_name": "कोयल",
+        "scientific_name": "Eudynamys scolopaceus",
+        "iucn_status": "Least Concern (High Cultural Value)",
+        "photo": "/images/birds_awareness.jpg",
+        "where_seen_in_ranchi": "Every sector in Ranchi with mature trees — Morabadi, HEC, Harmu, Bariatu",
+        "why_trees_matter": "Strict frugivore feeding on Ficus figs, Jamun, and Ber. Relies on dense canopy to parasitize crow nests for breeding.",
+        "consequence_if_cut": "Will Leave: Silence in Ranchi spring; canopy destruction drives koels out of urban neighbourhoods."
+      },
+      {
+        "id": "purple_sunbird",
+        "english_name": "Purple Sunbird",
+        "hindi_name": "शकरखोरा / फूलचुही",
+        "scientific_name": "Cinnyris asiaticus",
+        "iucn_status": "Native Keystone Pollinator",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "Rock Garden, Kanke, Dhurwa, Morabadi, Hatia gardens",
+        "why_trees_matter": "Pollinates native flowering trees like Semal (Bombax ceiba), Palash (Butea monosperma), and Coral tree.",
+        "consequence_if_cut": "Severe Decline: Without mature nectar-bearing canopy trees, urban pollination chains break."
+      },
+      {
+        "id": "tailor_bird",
+        "english_name": "Common Tailorbird",
+        "hindi_name": "दर्जी चिड़िया (फदकी)",
+        "scientific_name": "Orthotomus sutorius",
+        "iucn_status": "Protected Native Resident",
+        "photo": "/images/birds_awareness.jpg",
+        "where_seen_in_ranchi": "HEC green avenues, Morabadi gardens, Kanke agricultural fields",
+        "why_trees_matter": "Stitches nests inside large living broadleaves of Mahua, Teak, and Mango. Cleans foliage of caterpillar pests.",
+        "consequence_if_cut": "Stop Breeding: Mechanical sapling pruning and loss of broadleaf mature foliage destroys nest sites."
+      },
+      {
+        "id": "black_drongo",
+        "english_name": "Black Drongo",
+        "hindi_name": "भुजंगा (कोतवाल)",
+        "scientific_name": "Dicrurus macrocercus",
+        "iucn_status": "Protected Keystone Predator",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "Dhurwa open fields, Kanke Dam, Ring Road border, Namkum",
+        "why_trees_matter": "Requires tall vantage perches on high mature branches to dive-bomb flying insects and protect passerine birds from raptors.",
+        "consequence_if_cut": "Will Leave: Loss of perch trees destroys hunting efficiency, causing insect pest outbreaks."
+      },
+      {
+        "id": "flying_fox",
+        "english_name": "Indian Flying Fox (Giant Fruit Bat)",
+        "hindi_name": "बड़ा चमगादड़ (फलभक्षी उड़न लोमड़ी)",
+        "scientific_name": "Pteropus medius",
+        "iucn_status": "Schedule II WPA / Keystone Seed Disperser",
+        "photo": "/images/birds_awareness.jpg",
+        "where_seen_in_ranchi": "HEC Sector 2 Colonial Trees, Doranda, Kanke Dam road, Tagore Hill",
+        "why_trees_matter": "Roosts exclusively in colonies of hundreds on giant 60+ year old Banyan and Peepal crowns. Ranchi's #1 forest seed disperser.",
+        "consequence_if_cut": "Complete Colony Collapse: Roost felling kills hundreds of bats and permanently halts native forest seed dispersion across 40 km radius."
+      },
+      {
+        "id": "peafowl",
+        "english_name": "Indian Peafowl",
+        "hindi_name": "मोर (राष्ट्रीय पक्षी)",
+        "scientific_name": "Pavo cristatus",
+        "iucn_status": "Schedule I Highest Protection",
+        "photo": "/images/canopy_birds.jpg",
+        "where_seen_in_ranchi": "Kanke Dam catchment, Pithoria foothills, Ring Road Kathal More outer groves",
+        "why_trees_matter": "Roosts high in dense mature Sal, Mahua, and Banyan boughs at night to escape feral dogs and predators.",
+        "consequence_if_cut": "Local Extinction in Ranchi Suburbs: Ground nesting and roosting require undisturbed canopy cover; road felling leads to mortality by stray dogs and roadkill."
+      }
+    ]
+  },
+  "ecosystem_chain": {
+    "headline": "1 Mature Tree = One Complete Living Ecosystem",
+    "core_quote": "You can plant a sapling in 1 day, but you cannot plant a 40-year-old nesting tree. It takes 20 years to become a home again.",
+    "links": [
+      {
+        "id": 1,
+        "title": "1 Mature Heritage Tree",
+        "description": "A 40-year-old Sal, Banyan, or Peepal produces 118 kg oxygen/year, absorbs 24.5 kg CO2, and regulates subsoil water table.",
+        "icon": "tree",
+        "status_when_cut": "LOST: Cannot be replaced by saplings for 4 decades"
+      },
+      {
+        "id": 2,
+        "title": "50+ Insect & Arthropod Species",
+        "description": "Bark beetles, native honeybees, praying mantises, caterpillars, and wood-boring larvae thrive in foliage and trunk fissures.",
+        "icon": "bug",
+        "status_when_cut": "EXTIRPATED: Complete micro-habitat destruction in seconds"
+      },
+      {
+        "id": 3,
+        "title": "Birds, Bats & Small Fauna",
+        "description": "Hornbills, owls, barbets, bats, and squirrels depend on hollows, fruits, and insects for daily food and breeding.",
+        "icon": "bird",
+        "status_when_cut": "DISPLACED / STARVED: Breeding failure and reproductive collapse"
+      },
+      {
+        "id": 4,
+        "title": "Natural Pest Control & Pollination",
+        "description": "Birds and bats consume agricultural pests and mosquitoes, while pollinating native flora across Ranchi.",
+        "icon": "shield",
+        "status_when_cut": "BROKEN: Surge in mosquito-borne illness and pesticide necessity"
+      },
+      {
+        "id": 5,
+        "title": "Seed Dispersal & Wild Regeneration",
+        "description": "Frugivores spread native seeds through droppings, allowing forest renewal without human intervention.",
+        "icon": "sprout",
+        "status_when_cut": "CEASED: Forest regeneration stops; invasive weeds take over"
+      },
+      {
+        "id": 6,
+        "title": "Clean Air & Microclimate Cooling",
+        "description": "Dense canopy cools ambient temperature by 3°C to 5°C and filters particulate dust (PM2.5 / PM10) from Ranchi air.",
+        "icon": "wind",
+        "status_when_cut": "COLLAPSED: Urban Heat Island effect & severe AQI spikes"
+      }
+    ]
+  },
+  "decline_correlation": [
+    { "year": 2015, "tree_cover_sq_km": 1184, "bird_sightings_index": 100, "annual_aqi": 105 },
+    { "year": 2017, "tree_cover_sq_km": 1178, "bird_sightings_index": 94, "annual_aqi": 112 },
+    { "year": 2019, "tree_cover_sq_km": 1172, "bird_sightings_index": 88, "annual_aqi": 118 },
+    { "year": 2021, "tree_cover_sq_km": 1168, "bird_sightings_index": 76, "annual_aqi": 136 },
+    { "year": 2023, "tree_cover_sq_km": 1161, "bird_sightings_index": 65, "annual_aqi": 171 },
+    { "year": 2024, "tree_cover_sq_km": 1154, "bird_sightings_index": 61, "annual_aqi": 188 },
+    { "year": 2025, "tree_cover_sq_km": 1148, "bird_sightings_index": 58, "annual_aqi": 196 }
+  ],
+  "health_cost": {
+    "ranchi_hospital_admissions": {
+      "pediatric_asthma_surge_pct": 64.0,
+      "copd_adult_increase_pct": 52.0,
+      "winter_emergency_visits_growth": "2.8x since 2019"
+    },
+    "risk_matrix": {
+      "child": {
+        "label": "Child (<12 years)",
+        "vulnerability_multiplier": 1.45,
+        "warning": "Lungs are actively developing. Children inhale 50% more air per kg of body weight than adults, leading to early bronchial hyper-reactivity."
+      },
+      "adult": {
+        "label": "Adult (18-59 years)",
+        "vulnerability_multiplier": 1.0,
+        "warning": "Chronic exposure accelerates atherosclerosis, reduces vital lung capacity, and causes recurring sinusitis and fatigue."
+      },
+      "senior": {
+        "label": "Senior (60+ years)",
+        "vulnerability_multiplier": 1.6,
+        "warning": "Severe risk of acute cardiac events, stroke, COPD exacerbation, and secondary pneumonia during high AQI days."
+      }
+    }
+  },
+  "hec_case_study": {
+    "title": "Spotlight Case Study: The HEC & Dhurwa Corridor Crisis",
+    "subtitle": "How the 10-Lane Road Threatens 7,000+ Heritage Trees — A Warning Bell for Ranchi's Final Green Refuge",
+    "stats": {
+      "corridor_length_km": 6.089,
+      "trees_at_risk": 7000,
+      "proposed_road_width_m": 60,
+      "heritage_trees_above_50_years": 840,
+      "bird_species_dependent": 28
+    },
+    "key_takeaways": [
+      "The Vivekananda School More to Naya Sarai road stretch features one of Ranchi's densest contiguous Sal, Banyan, and Peepal avenues.",
+      "The current SHAJ-111047-1 60-meter right-of-way design threatens over 7,000 trees with zero public consultation.",
+      "Lessons from Ratu Road and Kantatoli prove that compensatory afforestation fails to replace mature urban canopy, turning shaded corridors into severe heat islands."
+    ],
+    "citizen_mitigation_proposal": "Adopt a split-carriageway design preserving median heritage trees, reducing paved ROW from 60m to 35m, saving 82% of mature trees."
+  }
+}
