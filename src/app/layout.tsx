@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://savedhurwatrees.org"),
+  metadataBase: new URL("https://save-dhurwa-trees.vercel.app"),
   title: "Save Dhurwa Trees | A Digital Platform to Protect Ranchi's Urban Green Cover",
   description:
     "Fact-based civic platform documenting mature trees along the proposed Dhurwa to Naya Sarai road corridor in Ranchi, Jharkhand. Interactive tree map, environmental impact analysis, citizen reporting, and alternative road design advocacy.",

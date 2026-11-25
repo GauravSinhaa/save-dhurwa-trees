@@ -67,7 +67,7 @@ We urge the administration to prioritize "Development Without Destruction" for t
 Sincerely,
 Concerned Citizen of Ranchi
 Save Ranchi — Save Our Trees Collective
-Platform URL: https://savedhurwatrees.org/dashboard
+Platform URL: https://save-dhurwa-trees.vercel.app/dashboard
 `;
 
     const blob = new Blob([letterContent], { type: "text/plain;charset=utf-8" });
@@ -87,7 +87,7 @@ Around 7,000 trees in the HEC–Dhurwa area are potentially at risk due to the p
 https://c.org/sTJg4xx2Vz
 
 Explore the Citywide Tree & AQI Evidence Dashboard:
-https://savedhurwatrees.org/dashboard
+https://save-dhurwa-trees.vercel.app/dashboard
 
 Together, we can raise our voices for sustainable development and protect Ranchi's green heritage, biodiversity and natural environment. Every signature matters. Please support this cause. 💚`
   );

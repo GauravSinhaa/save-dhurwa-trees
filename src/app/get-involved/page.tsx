@@ -92,7 +92,7 @@ We advocate for:
 3. Constructive dialogue between citizens, arborists, and urban planners.
 
 Know the facts & explore the interactive tree map:
-https://savedhurwatrees.org`;
+https://save-dhurwa-trees.vercel.app`;
 
   const handleCopyShare = () => {
     navigator.clipboard.writeText(campaignSummary);

@@ -276,7 +276,7 @@ export default function PublicPetitionPage() {
               </p>
               <div className="pt-2 flex justify-center gap-2">
                 <a
-                  href="https://api.whatsapp.com/send?text=I%20just%20supported%20the%20civic%20initiative%20to%20save%20Dhurwa%27s%20trees%20and%20advocate%20for%20smarter%20road%20development%20in%20Ranchi.%20Read%20and%20sign%20here%3A%20https%3A%2F%2Fsavedhurwatrees.org%2Fpetition"
+                  href="https://api.whatsapp.com/send?text=I%20just%20supported%20the%20civic%20initiative%20to%20save%20Dhurwa%27s%20trees%20and%20advocate%20for%20smarter%20road%20development%20in%20Ranchi.%20Read%20and%20sign%20here%3A%20https%3A%2F%2Fsave-dhurwa-trees.vercel.app%2Fpetition"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-xs rounded-xl shadow-sm inline-flex items-center gap-1.5"

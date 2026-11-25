@@ -81,7 +81,7 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
           kpis.net_tree_deficit,
           "Trees",
           "Ecological Accounting",
-          "https://savedhurwatrees.org/dashboard",
+          "https://save-dhurwa-trees.vercel.app/dashboard",
           "Calculated true canopy deficit after accounting for 16% sapling survival rate",
         ],
       ]
