@@ -80,16 +80,17 @@ Platform URL: https://save-dhurwa-trees.vercel.app/dashboard
   };
 
   const shareText = encodeURIComponent(
-    `🚨 Ranchi needs your support! 
-Around 7,000 trees in the HEC–Dhurwa area are potentially at risk due to the proposed road development. Please take a moment to sign this petition and share it with others. 
+    `🚨 Ranchi Is Losing Its Green Cover & Clean Air!
 
-✍️ Sign the petition (750+ citizens already signed):
-https://c.org/sTJg4xx2Vz
-
-Explore the Citywide Tree & AQI Evidence Dashboard:
+Check the official citywide tree loss, AQI spikes & wildlife impact across Ranchi:
+📊 Live Environmental Dashboard:
 https://save-dhurwa-trees.vercel.app/dashboard
 
-Together, we can raise our voices for sustainable development and protect Ranchi's green heritage, biodiversity and natural environment. Every signature matters. Please support this cause. 💚`
+Over 7,000 mature trees in the HEC–Dhurwa corridor are currently at risk. Please add your voice:
+✍️ Sign the Citizen Petition (750+ already signed):
+https://c.org/sTJg4xx2Vz
+
+Together, let's advocate for Development Without Destruction. Please share this with every Ranchi resident! 🌲💚`
   );
 
   const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}`;
@@ -237,11 +238,10 @@ Together, we can raise our voices for sustainable development and protect Ranchi
             <button
               onClick={handlePledge}
               disabled={hasPledged}
-              className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-2 ${
-                hasPledged
-                  ? "bg-emerald-400 text-gray-950 cursor-default"
-                  : "bg-amber-400 hover:bg-amber-300 text-gray-950 shadow-lg hover:shadow-amber-500/30 hover:scale-105"
-              }`}
+              className={`px-5 py-2.5 rounded-xl font-bold text-xs transition-all flex items-center gap-2 ${hasPledged
+                ? "bg-emerald-400 text-gray-950 cursor-default"
+                : "bg-amber-400 hover:bg-amber-300 text-gray-950 shadow-lg hover:shadow-amber-500/30 hover:scale-105"
+                }`}
             >
               {hasPledged ? (
                 <>
