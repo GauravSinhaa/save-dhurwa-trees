@@ -226,7 +226,7 @@ export default function HomePage() {
         <InteractiveTreeMap height="560px" showFilters={true} />
       </section>
 
-      {/* Grassroots Citizen Movement Spotlight: @hamari.ranchi & @highpurpos */}
+      {/* Grassroots Citizen Movement Spotlight: @hamari.ranchi */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <GrassrootsSpotlight />
       </section>

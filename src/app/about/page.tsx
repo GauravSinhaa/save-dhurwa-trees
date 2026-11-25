@@ -95,16 +95,16 @@ export default function AboutPage() {
       <div className="bg-white rounded-3xl border border-gray-200 p-6 sm:p-8 space-y-4 shadow-sm text-xs text-gray-700">
         <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
           <Heart className="w-5 h-5 text-pink-600" />
-          <span>Grassroots Catalysts: @hamari.ranchi & @highpurpos</span>
+          <span>Grassroots Catalysts: @hamari.ranchi</span>
         </div>
         <p className="leading-relaxed">
-          Special civic recognition is extended to the youth and environmental initiatives{" "}
-          <strong>@hamari.ranchi</strong> and <strong>@highpurpos</strong> on Instagram. Their
+          Special civic recognition is extended to the youth and environmental initiative{" "}
+          <strong>@hamari.ranchi</strong> on Instagram. Their
           early mobilization, on-ground peaceful gatherings at Vivekanand Chowk / Shaheed
           Maidan, protective sacred thread-tying drives, and continuous community videos
           brought vital public attention to the Dhurwa road corridor&apos;s mature tree loss.
           This platform exists as an open, evidence-based technical tool to support and
-          amplify their lawful public advocacy.
+          amplify lawful citizen advocacy.
         </p>
         <div className="flex flex-wrap gap-3 pt-1">
           <a
@@ -114,14 +114,6 @@ export default function AboutPage() {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-pink-50 text-pink-800 border border-pink-200 font-semibold"
           >
             <span>Follow @hamari.ranchi on Instagram</span>
-          </a>
-          <a
-            href="https://www.instagram.com/highpurpos?mdxt=cXY5eGZmN21zMWNx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 font-semibold"
-          >
-            <span>Follow @highpurpos on Instagram</span>
           </a>
         </div>
       </div>

@@ -37,8 +37,8 @@ export const GrassrootsSpotlight: React.FC = () => {
   const socialReels = [
     {
       id: "reel-1",
-      creator: "@highpurpos",
-      creatorUrl: "https://www.instagram.com/highpurpos?mdxt=cXY5eGZmN21zMWNx",
+      creator: "Citizen Volunteers",
+      creatorUrl: "https://www.instagram.com/hamari.ranchi?cplk=MWJqbGRsazc1a2RzbQ==",
       titleEn: "Raksha Sutra for Dhurwa's Ancient Trees",
       titleHi: "धुर्वा के पुराने पेड़ों पर रक्षा सूत्र और 'चिपको' जागृति",
       descEn:
@@ -65,8 +65,8 @@ export const GrassrootsSpotlight: React.FC = () => {
     },
     {
       id: "reel-3",
-      creator: "@highpurpos",
-      creatorUrl: "https://www.instagram.com/highpurpos?mdxt=cXY5eGZmN21zMWNx",
+      creator: "Ranchi Citizen Collective",
+      creatorUrl: "https://www.instagram.com/hamari.ranchi?cplk=MWJqbGRsazc1a2RzbQ==",
       titleEn: "Citizen Memorandum to the Chief Secretary",
       titleHi: "मुख्य सचिव को नागरिकों का औपचारिक ज्ञापन",
       descEn:
@@ -96,13 +96,13 @@ export const GrassrootsSpotlight: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">
             {language === "hi"
               ? "धुर्वा के पेड़ों को बचाने वाले ज़मीनी साथी"
-              : "Driven by Ranchi's Citizens: @hamari.ranchi & @highpurpos"}
+              : "Driven by Ranchi's Citizens: @hamari.ranchi"}
           </h2>
 
           <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
             {language === "hi"
-              ? "शुरुआती दौर से ही इंस्टाग्राम पर @hamari.ranchi और @highpurpos ने धुर्वा के पेड़ों को बचाने के लिए ज़मीनी जागरूकता, शांतिपूर्ण जन-सभाओं, रक्षा सूत्र अभियानों और सोशल मीडिया पर हज़ारों नागरिकों को जोड़ने का काम किया है। यह डिजिटल मंच उनके प्रयासों का साक्ष्य-आधारित विस्तार है।"
-              : "From the very inception of the 10-lane proposal, local citizen initiatives like @hamari.ranchi and @highpurpos have spearheaded on-ground tree-protection drives, youth rallies at Vivekanand Chowk, peaceful tree-hugs, and digital petitions across Jharkhand."}
+              ? "शुरुआती दौर से ही इंस्टाग्राम पर @hamari.ranchi और स्थानीय पर्यावरण प्रेमियों ने धुर्वा के पेड़ों को बचाने के लिए ज़मीनी जागरूकता, शांतिपूर्ण जन-सभाओं, रक्षा सूत्र अभियानों और सोशल मीडिया पर हज़ारों नागरिकों को जोड़ने का काम किया है। यह डिजिटल मंच उनके प्रयासों का साक्ष्य-आधारित विस्तार है।"
+              : "From the very inception of the 10-lane proposal, local citizen initiatives like @hamari.ranchi and Ranchi youth collectives have spearheaded on-ground tree-protection drives, youth rallies at Vivekanand Chowk, peaceful tree-hugs, and digital petitions across Jharkhand."}
           </p>
 
           {/* Social Profile Badges */}
@@ -115,17 +115,6 @@ export const GrassrootsSpotlight: React.FC = () => {
             >
               <InstagramIcon className="w-4 h-4" />
               <span>@hamari.ranchi</span>
-              <ExternalLink className="w-3 h-3 text-white/80" />
-            </a>
-
-            <a
-              href="https://www.instagram.com/highpurpos?mdxt=cXY5eGZmN21zMWNx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-bold rounded-xl text-xs shadow-md transition-all hover:scale-105 border border-emerald-400/30"
-            >
-              <InstagramIcon className="w-4 h-4" />
-              <span>@highpurpos</span>
               <ExternalLink className="w-3 h-3 text-white/80" />
             </a>
           </div>
@@ -254,15 +243,6 @@ export const GrassrootsSpotlight: React.FC = () => {
             className="text-emerald-800 hover:underline font-semibold text-xs"
           >
             Follow @hamari.ranchi
-          </a>
-          <span>•</span>
-          <a
-            href="https://www.instagram.com/highpurpos"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-emerald-800 hover:underline font-semibold text-xs"
-          >
-            Follow @highpurpos
           </a>
         </div>
       </div>
