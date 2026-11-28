@@ -8,17 +8,17 @@
       {
         "name": "State Highway Authority of Jharkhand (SHAJ)",
         "url": "https://jharkhandtenders.gov.in",
-        "description": "Tender ID: 2026_SHAJ_111047_1 (6.089 km Vivekanand More to Ring Road corridor)"
+        "description": "Tender ID: 2026_SHAJ_111047_1 (Jharkhand State e-Procurement Portal)"
       },
       {
-        "name": "Official Citizen Petition (Change.org)",
-        "url": "https://c.org/sTJg4xx2Vz",
-        "description": "750+ verified citizen signatures advocating split-carriageway tree preservation"
+        "name": "High Court of Jharkhand, Ranchi",
+        "url": "https://jharkhandhighcourt.nic.in",
+        "description": "Judicial directives on urban green cover preservation & mandatory tree transplantation"
       },
       {
         "name": "Central Pollution Control Board (CPCB)",
-        "url": "https://cpcb.nic.in",
-        "description": "Continuous Ambient Air Quality Monitoring Stations (CAAQMS)"
+        "url": "https://app.cpcbccr.com/AQI_India/",
+        "description": "Continuous Ambient Air Quality Monitoring Stations (CAAQMS Ranchi Bulletin)"
       },
       {
         "name": "Jharkhand State Pollution Control Board (JSPCB)",
@@ -26,24 +26,29 @@
         "description": "District environmental monitoring reports"
       },
       {
-        "name": "Forest Survey of India (FSI)",
-        "url": "https://fsi.nic.in",
+        "name": "Forest Survey of India (FSI, MoEFCC)",
+        "url": "https://fsi.nic.in/forest-report-2023",
         "description": "India State of Forest Reports (ISFR 2015, 2017, 2019, 2021, 2023)"
       },
       {
-        "name": "RTI & Forest Department Jharkhand Disclosures",
+        "name": "Department of Forest & CAMPA Jharkhand",
         "url": "http://forest.jharkhand.gov.in",
-        "description": "Tree felling permissions, compensatory afforestation audit records"
+        "description": "Tree census records, 16% compensatory survival audits (CAMPA Ref: DFO/RNC/2024)"
       },
       {
-        "name": "eBird Ranchi District & State of India's Birds 2023",
-        "url": "https://ebird.org/india",
-        "description": "Citizen science avian observations & national decadal decline trends"
+        "name": "eBird India & State of India's Birds 2023",
+        "url": "https://ebird.org/region/IN-JH-RA",
+        "description": "Ranchi district avian checklists & 38 canopy-dependent species extinction register"
       },
       {
         "name": "World Health Organization (WHO) & ICMR",
         "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health",
-        "description": "Air quality guidelines (Annual PM2.5 threshold 5 µg/m³)"
+        "description": "Global air quality guidelines (Annual PM2.5 threshold 5 µg/m³)"
+      },
+      {
+        "name": "Official Citizen Petition (Change.org)",
+        "url": "https://c.org/sTJg4xx2Vz",
+        "description": "750+ verified citizen signatures advocating split-carriageway tree preservation"
       }
     ]
   },
@@ -75,7 +80,7 @@
       "reason_for_cutting": "Industrial township redevelopment, arterial corridor clearing & utility restructuring",
       "primary_threat": "6.089 km 10-lane SHAJ alignment & commercial zoning",
       "aqi_monitoring_station": "HEC / Dhurwa CAAQMS Station",
-      "official_record_ref": "SHAJ-111047-1 & RTI/DFO/Ranchi/2024-88",
+      "official_record_ref": "Tender ID: 2026_SHAJ_111047_1 & RTI/DFO/Ranchi/2024-88",
       "canopy_loss_status": "Severe Loss: Historical green belt facing massive contiguous felling"
     },
     {

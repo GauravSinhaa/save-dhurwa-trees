@@ -43,6 +43,24 @@ export default function DocumentsTransparencyPage() {
   ]);
   const [copiedDraft, setCopiedDraft] = useState(false);
 
+  const getPortalButtonLabel = (url: string) => {
+    if (url.includes("jharkhandtenders.gov.in")) return "Open e-Procurement Portal (jharkhandtenders.gov.in)";
+    if (url.includes("cpcb") || url.includes("cpcbccr")) return "Open CPCB CAAQMS Air Quality Portal";
+    if (url.includes("jharkhandhighcourt")) return "Open High Court Portal (jharkhandhighcourt.nic.in)";
+    if (url.includes("forest.jharkhand.gov.in")) return "Open Forest Dept / CAMPA Portal";
+    if (url.includes("campa.nic.in")) return "Open National CAMPA Portal";
+    if (url.includes("fsi.nic.in")) return "Open FSI Portal (fsi.nic.in)";
+    if (url.includes("ebird.org")) return "Open eBird Avian Database";
+    if (url.includes("change.org") || url.includes("c.org")) return "Sign Citizen Petition (Change.org)";
+    return "Open Official Verification Source";
+  };
+
+  const getPortalTooltip = (url: string) => {
+    if (url.includes("change.org") || url.includes("c.org")) return "Sign Citizen Petition (Change.org)";
+    if (url.includes("ebird.org")) return "Open eBird Avian Database";
+    return "Open Official Statutory Portal";
+  };
+
   useEffect(() => {
     async function loadDocs() {
       try {
@@ -315,6 +333,24 @@ Signature of Applicant: ___________________________`;
                   <span>3. FSI Audit</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
+                <a
+                  href="/documents/evidence_screens/04_ebird_wildlife_evidence.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-lg bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-500/40 text-[11px] flex items-center gap-1"
+                >
+                  <span>4. eBird Wildlife</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+                <a
+                  href="/documents/evidence_screens/05_citizen_petition_evidence.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 rounded-lg bg-emerald-900/80 hover:bg-emerald-800 text-emerald-200 border border-emerald-500/40 text-[11px] flex items-center gap-1"
+                >
+                  <span>5. Citizen Petition</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
           </div>
@@ -413,7 +449,7 @@ Signature of Applicant: ___________________________`;
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold text-xs transition-colors"
-                        title="Open Official Statutory Portal"
+                        title={getPortalTooltip(doc.source_url)}
                       >
                         <ExternalLink className="w-3 h-3" />
                       </a>
@@ -679,7 +715,7 @@ Signature of Applicant: ___________________________`;
                     className="px-4 py-2.5 rounded-xl bg-[#1b4332] hover:bg-[#2d6a4f] text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-colors"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    <span>Open Official Portal</span>
+                    <span>{getPortalButtonLabel(selectedDocForModal.source_url)}</span>
                   </a>
                 )}
 

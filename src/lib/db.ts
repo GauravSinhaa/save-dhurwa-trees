@@ -449,7 +449,8 @@ export const initialProjectDocuments: ProjectDocument[] = [
     verification_status: "REQUESTED_AWAITING",
     summary:
       "Statutory inquiry filed under Section 6(1) of RTI Act 2005 seeking Joint Tree Enumeration Survey register, statutory felling clearance, and compensatory land parcels.",
-    source_url: "/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md",
+    source_url: "http://forest.jharkhand.gov.in",
+    file_url: "/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md",
     page_count: 4,
     uploaded_at: "2026-03-05T15:30:00Z",
     statutory_ref: "RTI Act 2005 Section 6(1) Application Form 'A'",
@@ -493,7 +494,8 @@ export const initialProjectDocuments: ProjectDocument[] = [
     verification_status: "OFFICIAL_VERIFIED",
     summary:
       "Statutory ratio guidelines (1:10 saplings) audited against field realities: 34,140 felled trees vs 85,000 planted saplings, with an audited 16.0% field survival rate resulting in a net deficit of -20,540 trees.",
-    source_url: "/documents/evidence_screens/03_fsi_canopy_audit_evidence.png",
+    source_url: "http://forest.jharkhand.gov.in",
+    file_url: "https://campa.nic.in",
     page_count: 8,
     uploaded_at: "2026-01-15T09:00:00Z",
     statutory_ref: "CAMPA Jharkhand State Audit & RTI Disclosures (2019-2025)",

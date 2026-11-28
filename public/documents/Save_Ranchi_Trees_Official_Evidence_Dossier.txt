@@ -23,13 +23,14 @@ In light of ongoing public discussions, civic inquiries, and ground mobilization
 
 ## 1. MASTER EVIDENCE & SOURCE VERIFICATION MATRIX
 
-| Metric / Claim on Platform | Official Figure | Statutory Authority | Official Document / Reference No. | Direct Verification URL | Evidence Screenshot Reference |
+| Metric / Claim on Platform | Official Figure | Issuing / Governing Body | Official Document / Reference No. | Direct Verification URL | Evidence Screenshot Reference |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **HEC–Dhurwa Corridor 10-Lane Project** | 6.089 km Main + 2.12 km Link (8.209 km total) | State Highway Authority of Jharkhand (SHAJ) | Tender ID: **`2026_SHAJ_111047_1`**<br>Ref: `SHAJ/Proc/CW/Vivekanand Sch-Ring Road/2025` | [jharkhandtenders.gov.in](https://jharkhandtenders.gov.in) | `01_shaj_tender_evidence.png` |
 | **Trees Threatened in Dhurwa Corridor** | ~7,000 Mature Trees | PWD / SHAJ Right-of-Way Survey | 60-meter proposed ROW corridor alignment | [jharkhandtenders.gov.in](https://jharkhandtenders.gov.in) | `01_shaj_tender_evidence.png` |
+| **Judicial Directives & Tree Preservation** | Mandatory Transplantation & Realignment | High Court of Jharkhand, Ranchi | High Court Green Cover PIL Directives & Bench Observations | [jharkhandhighcourt.nic.in](https://jharkhandhighcourt.nic.in) | `03_fsi_canopy_audit_evidence.png` |
 | **Total Trees Felled in Ranchi (2019–2025)** | 34,140 Trees | Ranchi Forest Division / RCD Disclosures | RTI/DFO/Ranchi/2024-88 (Ratu Rd, Kantatoli, Siram Toli, Ring Rd) | [forest.jharkhand.gov.in](http://forest.jharkhand.gov.in) | `03_fsi_canopy_audit_evidence.png` |
-| **Compensatory Afforestation Survival Rate** | Only 16.0% Survival (84.0% Mortality) | Forest Dept / CAMPA Audit Reports | DFO/RNC/CAMPA-Survival-Audit/2024 | [forest.jharkhand.gov.in](http://forest.jharkhand.gov.in) | `03_fsi_canopy_audit_evidence.png` |
-| **Net Standing Canopy Deficit** | -20,540 Trees Deficit | Ecological Balance Audit | Compensatory survival deficit calculation | [save-dhurwa-trees.vercel.app](https://save-dhurwa-trees.vercel.app/dashboard) | `03_fsi_canopy_audit_evidence.png` |
+| **Compensatory Afforestation Survival Rate** | Only 16.0% Survival (84.0% Mortality) | Department of Forest / CAMPA Audit | DFO/RNC/CAMPA-Survival-Audit/2024 | [forest.jharkhand.gov.in](http://forest.jharkhand.gov.in) & [campa.nic.in](https://campa.nic.in) | `03_fsi_canopy_audit_evidence.png` |
+| **Net Standing Canopy Deficit** | -20,540 Trees Deficit | Forest Dept / CAMPA Audit | FSI Canopy & 16% Compensatory Survival Deficit Accounting | [forest.jharkhand.gov.in](http://forest.jharkhand.gov.in) | `03_fsi_canopy_audit_evidence.png` |
 | **Ranchi Annual Average AQI (2025)** | 196 AQI (Poor; Peak 340+ Severe) | Central Pollution Control Board (CPCB) | CAAQMS Ranchi Stations (Albert Ekka, Harmu, Kanke, Dhurwa) | [app.cpcbccr.com/AQI_India](https://app.cpcbccr.com/AQI_India/) | `02_cpcb_aqi_evidence.png` |
 | **Ranchi District Forest Cover Loss** | 1,184 km² (2015) → 1,161 km² (2023) | Forest Survey of India (MoEFCC) | India State of Forest Report (ISFR 2015–2023) | [fsi.nic.in/forest-report-2023](https://fsi.nic.in/forest-report-2023) | `03_fsi_canopy_audit_evidence.png` |
 | **Canopy-Dependent Bird Species at Risk** | 38 Species Facing Local Extinction | eBird India & Bird Count India | eBird Ranchi District Checklist (214 total species) | [ebird.org/region/IN-JH-RA](https://ebird.org/region/IN-JH-RA) | `04_ebird_wildlife_evidence.png` |
@@ -201,7 +202,7 @@ Air quality data in Ranchi is recorded 24/7 by the **Central Pollution Control B
 #### 1. The Citizen Petition
 * **Title:** *"Ranchi Needs Your Support: Save ~7,000 Trees in HEC-Dhurwa Corridor"*
 * **Platform:** Change.org Verified Civic Campaign
-* **Direct URL:** [https://c.org/sTJg4xx2Vz](https://c.org/sTJg4xx2Vz)
+* **Direct Campaign URL:** [https://c.org/sTJg4xx2Vz](https://c.org/sTJg4xx2Vz) (Direct: [https://www.change.org/p/save-7-000-trees-in-hec-dhurwa-ranchi](https://www.change.org/p/save-7-000-trees-in-hec-dhurwa-ranchi))
 * **Verified Signatures:** **750+ Ranchi citizens** within initial mobilization.
 
 #### 2. The Constructive Alternative: "Split-Carriageway Design"

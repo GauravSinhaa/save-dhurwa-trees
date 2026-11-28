@@ -154,9 +154,9 @@ export const RanchiTransparencySection: React.FC = () => {
         <table className="w-full text-left text-xs text-gray-700">
           <thead className="bg-gray-50 border-b border-gray-200 text-[11px] font-extrabold uppercase text-gray-600">
             <tr>
-              <th className="py-3 px-4">Statutory Body / Source</th>
+              <th className="py-3 px-4">Statutory Authority / Civic Source</th>
               <th className="py-3 px-4">Scope & Verification Metric</th>
-              <th className="py-3 px-4 text-right">Official Verification Portal</th>
+              <th className="py-3 px-4 text-right">Verification Portal / Direct Source</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 font-medium">
@@ -171,7 +171,11 @@ export const RanchiTransparencySection: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-emerald-700 hover:text-emerald-800 font-bold hover:underline"
                   >
-                    <span>{source.url.replace("https://", "").replace("http://", "").split("/")[0]}</span>
+                    <span>
+                      {source.url.includes("c.org") || source.url.includes("change.org")
+                        ? "change.org (Petition)"
+                        : source.url.replace("https://", "").replace("http://", "").split("/")[0]}
+                    </span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </td>
