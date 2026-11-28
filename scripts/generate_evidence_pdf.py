@@ -240,7 +240,8 @@ def build_pdf():
     meta_content = (
         "<b>Focus Area:</b> HEC–Dhurwa Green Avenue Corridor, Shaheed Maidan to Ring Road, Ranchi, Jharkhand<br/>"
         "<b>Verified Statutory Reference:</b> SHAJ Tender ID: <b>2026_SHAJ_111047_1</b> | CPCB CAAQMS Stations | ISFR FSI Audits<br/>"
-        "<b>Citizen Public Platform:</b> https://save-dhurwa-trees.vercel.app/dashboard &bull; <b>Petition:</b> https://c.org/sTJg4xx2Vz (750+ Signatures)"
+        "<b>Citizen Public Platform:</b> <a href='https://save-dhurwa-trees.vercel.app/dashboard' color='#047857'><u>https://save-dhurwa-trees.vercel.app/dashboard</u></a> &bull; "
+        "<b>Petition:</b> <a href='https://c.org/sTJg4xx2Vz' color='#b45309'><u>https://c.org/sTJg4xx2Vz</u></a> (750+ Signatures)"
     )
     meta_table = Table(
         [[Paragraph(meta_content, style_meta_box)]],
@@ -283,77 +284,77 @@ def build_pdf():
             Paragraph("8.209 km total (6.089 km Main + 2.12 km Link)", style_table_cell),
             Paragraph("State Highway Authority of Jharkhand (SHAJ)", style_table_cell),
             Paragraph("Tender ID: <b>2026_SHAJ_111047_1</b><br/>Ref: SHAJ/Proc/CW/2025", style_table_cell),
-            Paragraph("jharkhandtenders.gov.in", style_table_cell),
+            Paragraph("<a href='https://jharkhandtenders.gov.in' color='#1d4ed8'><u>jharkhandtenders.gov.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Avenue Trees in Corridor</b>", style_table_cell),
             Paragraph("~7,000 Mature Avenue Trees", style_table_cell),
             Paragraph("PWD / SHAJ Right-of-Way Survey", style_table_cell),
             Paragraph("60-meter proposed clearing footprint", style_table_cell),
-            Paragraph("jharkhandtenders.gov.in", style_table_cell),
+            Paragraph("<a href='https://jharkhandtenders.gov.in' color='#1d4ed8'><u>jharkhandtenders.gov.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Judicial Canopy Directives</b>", style_table_cell),
             Paragraph("Mandatory Transplantation & Realignment", style_table_cell),
             Paragraph("High Court of Jharkhand, Ranchi", style_table_cell),
             Paragraph("High Court Green Cover PIL Directives", style_table_cell),
-            Paragraph("jharkhandhighcourt.nic.in", style_table_cell),
+            Paragraph("<a href='https://jharkhandhighcourt.nic.in' color='#1d4ed8'><u>jharkhandhighcourt.nic.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Trees Felled in Ranchi (2019–2025)</b>", style_table_cell),
             Paragraph("34,140 Mature Trees", style_table_cell),
             Paragraph("Ranchi Forest Division / RCD Disclosures", style_table_cell),
             Paragraph("RTI/DFO/Ranchi/2024-88 (Ratu, Siram Toli, Ring Rd)", style_table_cell),
-            Paragraph("forest.jharkhand.gov.in", style_table_cell),
+            Paragraph("<a href='http://forest.jharkhand.gov.in' color='#1d4ed8'><u>forest.jharkhand.gov.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Compensatory Survival Rate</b>", style_table_cell),
             Paragraph("Only 16.0% Survival<br/>(84% / 71,400 dead)", style_table_cell),
             Paragraph("Department of Forest / CAMPA Audit", style_table_cell),
             Paragraph("DFO/RNC/CAMPA-Survival-Audit/2024", style_table_cell),
-            Paragraph("forest.jharkhand.gov.in & campa.nic.in", style_table_cell),
+            Paragraph("<a href='http://forest.jharkhand.gov.in' color='#1d4ed8'><u>forest.jharkhand.gov.in</u></a> &bull; <a href='https://campa.nic.in' color='#1d4ed8'><u>campa.nic.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Net Standing Canopy Deficit</b>", style_table_cell),
             Paragraph("<b>-20,540 Trees Deficit</b><br/>(13,600 alive vs 34,140 felled)", style_table_cell),
             Paragraph("Forest Dept / CAMPA Audit Accounting", style_table_cell),
             Paragraph("Cumulative 2019–2025 Audit Deficit", style_table_cell),
-            Paragraph("forest.jharkhand.gov.in", style_table_cell),
+            Paragraph("<a href='http://forest.jharkhand.gov.in' color='#1d4ed8'><u>forest.jharkhand.gov.in</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Ranchi Annual Average AQI (2025)</b>", style_table_cell),
             Paragraph("196 AQI (Poor; Peak 340+ Severe)", style_table_cell),
             Paragraph("Central Pollution Control Board (CPCB)", style_table_cell),
             Paragraph("CAAQMS Stations (Ekka, Harmu, BAU, Dhurwa)", style_table_cell),
-            Paragraph("app.cpcbccr.com/AQI_India", style_table_cell),
+            Paragraph("<a href='https://app.cpcbccr.com/AQI_India/' color='#1d4ed8'><u>app.cpcbccr.com/AQI_India</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>District Forest Cover Trend</b>", style_table_cell),
             Paragraph("1,184 km² (2015) → 1,161 km² (2023)", style_table_cell),
             Paragraph("Forest Survey of India (MoEFCC)", style_table_cell),
             Paragraph("India State of Forest Report (ISFR 2015–2023)", style_table_cell),
-            Paragraph("fsi.nic.in/forest-report-2023", style_table_cell),
+            Paragraph("<a href='https://fsi.nic.in/forest-report-2023' color='#1d4ed8'><u>fsi.nic.in/forest-report-2023</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Canopy-Dependent Bird Species</b>", style_table_cell),
             Paragraph("38 Bird Species at Extinction Risk", style_table_cell),
             Paragraph("eBird India & Bird Count India", style_table_cell),
             Paragraph("eBird Ranchi District Checklist (IN-JH-RA)", style_table_cell),
-            Paragraph("ebird.org/region/IN-JH-RA", style_table_cell),
+            Paragraph("<a href='https://ebird.org/region/IN-JH-RA' color='#1d4ed8'><u>ebird.org/region/IN-JH-RA</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Annual PM2.5 Excess Over WHO</b>", style_table_cell),
             Paragraph("74.2 µg/m³ (14.8× WHO Safe Limit)", style_table_cell),
             Paragraph("World Health Organization (WHO) & ICMR", style_table_cell),
             Paragraph("WHO Air Quality Guidelines (5 µg/m³ limit)", style_table_cell),
-            Paragraph("who.int/air-quality-and-health", style_table_cell),
+            Paragraph("<a href='https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health' color='#1d4ed8'><u>who.int/air-quality</u></a>", style_table_cell),
         ],
         [
             Paragraph("<b>Citizen Green Petition</b>", style_table_cell),
             Paragraph("750+ Verified Signatories", style_table_cell),
             Paragraph("Change.org Verified Civic Campaign", style_table_cell),
             Paragraph("Petition ID: sTJg4xx2Vz", style_table_cell),
-            Paragraph("c.org/sTJg4xx2Vz", style_table_cell),
+            Paragraph("<a href='https://c.org/sTJg4xx2Vz' color='#b45309'><u>c.org/sTJg4xx2Vz</u></a>", style_table_cell),
         ],
     ]
 
@@ -444,7 +445,7 @@ def build_pdf():
         "<b>Reference Number:</b> <code>SHAJ/Proc/CW/Vivekanand Sch-Ring Road/2025</code> (Contract Model: EPC Mode).",
         "<b>Official Work Description:</b> Six-Lane Divided Carriageway with service road, cycle track & footpath (6.089 km) and Link Road (2.12 km), Total 8.209 km from Vivekanand School More to Ring Road via High Court & Vidhan Sabha.",
         "<b>Avenue Tree Footprint:</b> 60-meter right-of-way clearing path across continuous 40–70 year-old Sal, Peepal, Banyan, and Mahua avenues. Field enumeration marks <b>~7,000 standing trees</b> within the direct clearing alignment.",
-        "<b>Independent Citizen Verification:</b> Visit <b>jharkhandtenders.gov.in</b> &rarr; Tender Search &rarr; Enter Tender ID: <b>2026_SHAJ_111047_1</b>."
+        "<b>Independent Citizen Verification:</b> Visit <a href='https://jharkhandtenders.gov.in' color='#1d4ed8'><u>jharkhandtenders.gov.in</u></a> &rarr; Tender Search &rarr; Enter Tender ID: <b>2026_SHAJ_111047_1</b>."
     ]
     story.append(make_fullwidth_dossier(
         "Dossier 1: HEC–Dhurwa Road Corridor Widening (SHAJ)",
@@ -464,7 +465,7 @@ def build_pdf():
         "<b>Severe Winter Spikes:</b> Frequently surges above <b>340+ AQI (Severe / Hazardous category)</b> during winter thermal inversion periods.",
         "<b>Unhealthy Air Exposure:</b> Days with Poor/Very Poor air increased from 48 days (2019) to <b>152 days per year (2025)</b>.",
         "<b>Public Health Exposure:</b> Annual average PM2.5 levels reach 74.2 &mu;g/m&sup3; (14.8&times; the WHO recommended safe limit of 5 &mu;g/m&sup3;).",
-        "<b>Direct Verification Portals:</b> Real-time bulletin at <b>app.cpcbccr.com/AQI_India</b> | CPCB official archive: <b>cpcb.nic.in</b>."
+        "<b>Direct Verification Portals:</b> Real-time bulletin at <a href='https://app.cpcbccr.com/AQI_India/' color='#1d4ed8'><u>app.cpcbccr.com/AQI_India</u></a> | CPCB official archive: <a href='https://cpcb.nic.in' color='#1d4ed8'><u>cpcb.nic.in</u></a>."
     ]
     story.append(make_fullwidth_dossier(
         "Dossier 2: CPCB Continuous Air Quality (CAAQMS) Degradation",
@@ -489,7 +490,7 @@ def build_pdf():
         "<b>Actual Surviving Trees:</b> 85,000 &times; 16% = <b>13,600 surviving trees</b>.",
         "<b>Net Standing Canopy Deficit:</b> 13,600 &minus; 34,140 = <b>-20,540 trees net standing canopy deficit</b> across Ranchi.",
         "<b>FSI Satellite Canopy Cover:</b> Ranchi district forest cover contracted from 1,184 km&sup2; (ISFR 2015) to 1,161 km&sup2; (ISFR 2023).",
-        "<b>Official Verification Portals:</b> <b>fsi.nic.in/forest-report-2023</b> &bull; <b>forest.jharkhand.gov.in</b> &bull; <b>campa.nic.in</b>."
+        "<b>Official Verification Portals:</b> <a href='https://fsi.nic.in/forest-report-2023' color='#1d4ed8'><u>fsi.nic.in</u></a> &bull; <a href='http://forest.jharkhand.gov.in' color='#1d4ed8'><u>forest.jharkhand.gov.in</u></a> &bull; <a href='https://campa.nic.in' color='#1d4ed8'><u>campa.nic.in</u></a>."
     ]
     story.append(make_fullwidth_dossier(
         "Dossier 3: Forest Survey of India & 16% CAMPA Survival Audit",
@@ -508,7 +509,7 @@ def build_pdf():
         "<b>Species at Local Extinction Risk:</b> <b>38 canopy-dependent bird species</b> in Dhurwa facing severe localized habitat loss.",
         "<b>Obligate Cavity Nesters:</b> Indian Grey Hornbill, Spotted Owlet, and Coppersmith Barbet strictly nest in 40+ year hollow trunks that compensatory saplings cannot replicate for 4 decades.",
         "<b>Protected Keystone Species:</b> Indian Peafowl (Schedule I WPA), Shikra raptors, and maternal Indian Flying Fox keystone pollinator colonies.",
-        "<b>Verification URLs:</b> <b>ebird.org/region/IN-JH-RA</b> &bull; <b>stateofindiasbirds.in</b> &bull; <b>iucnredlist.org</b>."
+        "<b>Verification URLs:</b> <a href='https://ebird.org/region/IN-JH-RA' color='#1d4ed8'><u>ebird.org/region/IN-JH-RA</u></a> &bull; <a href='https://stateofindiasbirds.in' color='#1d4ed8'><u>stateofindiasbirds.in</u></a> &bull; <a href='https://www.iucnredlist.org' color='#1d4ed8'><u>iucnredlist.org</u></a>."
     ]
     story.append(make_fullwidth_dossier(
         "Dossier 4: eBird Avian Biodiversity & Local Extinction Risk",
@@ -592,10 +593,10 @@ def build_pdf():
     # Step-by-Step Portal Verification Guide
     story.append(Paragraph("<b>Step-by-Step Statutory Verification Guide for Citizens & Authorities</b>", style_h2))
     verify_steps = [
-        "<b>SHAJ Road Tender ID:</b> Open <b>jharkhandtenders.gov.in</b> &rarr; Click 'Tender Search' &rarr; Enter Tender ID: <code>2026_SHAJ_111047_1</code>.",
-        "<b>CPCB Real-Time AQI Telemetry:</b> Open <b>app.cpcbccr.com/AQI_India</b> &rarr; Select State: Jharkhand &rarr; City: Ranchi &rarr; View live CAAQMS data.",
-        "<b>FSI Forest Canopy Audit:</b> Open <b>fsi.nic.in</b> &rarr; Download 'India State of Forest Report' &rarr; Ranchi District Table 11.2.",
-        "<b>eBird Avian Checklist:</b> Open <b>ebird.org/region/IN-JH-RA</b> &rarr; Review documented bird species and seasonal bar charts."
+        "<b>SHAJ Road Tender ID:</b> Open <a href='https://jharkhandtenders.gov.in' color='#1d4ed8'><u>jharkhandtenders.gov.in</u></a> &rarr; Click 'Tender Search' &rarr; Enter Tender ID: <code>2026_SHAJ_111047_1</code>.",
+        "<b>CPCB Real-Time AQI Telemetry:</b> Open <a href='https://app.cpcbccr.com/AQI_India/' color='#1d4ed8'><u>app.cpcbccr.com/AQI_India</u></a> &rarr; Select State: Jharkhand &rarr; City: Ranchi &rarr; View live CAAQMS data.",
+        "<b>FSI Forest Canopy Audit:</b> Open <a href='https://fsi.nic.in' color='#1d4ed8'><u>fsi.nic.in</u></a> &rarr; Download 'India State of Forest Report' &rarr; Ranchi District Table 11.2.",
+        "<b>eBird Avian Checklist:</b> Open <a href='https://ebird.org/region/IN-JH-RA' color='#1d4ed8'><u>ebird.org/region/IN-JH-RA</u></a> &rarr; Review documented bird species and seasonal bar charts."
     ]
     for step in verify_steps:
         story.append(Paragraph(f"&bull;&nbsp;{step}", style_bullet))
@@ -604,8 +605,8 @@ def build_pdf():
 
     # Contact & Civic Collaboration Box
     contact_content = (
-        "<b>Save Dhurwa Trees Initiative:</b> Open Citizen Platform: <b>https://save-dhurwa-trees.vercel.app</b> &bull; "
-        "Dashboard: <b>/dashboard</b> &bull; Verified Petition: <b>https://c.org/sTJg4xx2Vz</b><br/>"
+        "<b>Save Dhurwa Trees Initiative:</b> Open Citizen Platform: <a href='https://save-dhurwa-trees.vercel.app' color='#047857'><u>https://save-dhurwa-trees.vercel.app</u></a> &bull; "
+        "Dashboard: <a href='https://save-dhurwa-trees.vercel.app/dashboard' color='#047857'><u>/dashboard</u></a> &bull; Verified Petition: <a href='https://c.org/sTJg4xx2Vz' color='#b45309'><u>https://c.org/sTJg4xx2Vz</u></a><br/>"
         "<i>This dossier is maintained under open civic scrutiny. All statutory citations are cross-referenced with official Government of Jharkhand and Government of India gazettes.</i>"
     )
     contact_table = Table(
