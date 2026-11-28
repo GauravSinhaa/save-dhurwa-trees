@@ -105,6 +105,10 @@ export interface ProjectDocument {
   file_url?: string;
   page_count?: number;
   uploaded_at: string;
+  statutory_ref?: string;
+  evidence_image?: string;
+  key_findings?: string[];
+  full_content?: string;
 }
 
 

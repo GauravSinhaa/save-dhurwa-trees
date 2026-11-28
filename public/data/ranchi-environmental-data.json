@@ -6,6 +6,16 @@
     "geography": "Ranchi City & Ranchi District, Jharkhand, India",
     "lead_sources": [
       {
+        "name": "State Highway Authority of Jharkhand (SHAJ)",
+        "url": "https://jharkhandtenders.gov.in",
+        "description": "Tender ID: 2026_SHAJ_111047_1 (6.089 km Vivekanand More to Ring Road corridor)"
+      },
+      {
+        "name": "Official Citizen Petition (Change.org)",
+        "url": "https://c.org/sTJg4xx2Vz",
+        "description": "750+ verified citizen signatures advocating split-carriageway tree preservation"
+      },
+      {
         "name": "Central Pollution Control Board (CPCB)",
         "url": "https://cpcb.nic.in",
         "description": "Continuous Ambient Air Quality Monitoring Stations (CAAQMS)"

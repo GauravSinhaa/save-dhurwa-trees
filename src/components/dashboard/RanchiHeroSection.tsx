@@ -110,8 +110,15 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
               Ranchi District & Urban Municipal Zone
             </span>
           </div>
-          <div className="text-[11px] sm:text-xs text-red-300 flex items-center gap-1.5 font-medium">
-            <span>Official Records (CPCB • FSI • RTI)</span>
+          <div className="text-[11px] sm:text-xs text-red-300 flex items-center gap-2 font-medium">
+            <a
+              href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md"
+              download="Save_Ranchi_Trees_Official_Evidence_Dossier.md"
+              className="px-3 py-1 rounded-lg bg-red-900/90 hover:bg-red-800 text-white font-bold flex items-center gap-1.5 border border-red-500/60 shadow-sm transition-all"
+            >
+              <Download className="w-3.5 h-3.5 text-amber-300" />
+              <span>Download Evidence Dossier (.MD)</span>
+            </a>
           </div>
         </div>
 
