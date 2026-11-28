@@ -404,8 +404,9 @@ export const initialProjectDocuments: ProjectDocument[] = [
     verification_status: "OFFICIAL_VERIFIED",
     summary:
       "Comprehensive statutory evidence dossier detailing Tender ID 2026_SHAJ_111047_1, CPCB CAAQMS air monitoring records, FSI ISFR forest cover reports, 16% compensatory survival audits, and eBird avian checklists.",
-    source_url: "/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md",
-    page_count: 14,
+    source_url: "/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.pdf",
+    file_url: "/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md",
+    page_count: 5,
     uploaded_at: "2026-11-25T10:00:00Z",
     statutory_ref: "SHAJ / CPCB / FSI / eBird Consolidated Civic Audit",
     evidence_image: "/documents/evidence_screens/01_shaj_tender_evidence.png",

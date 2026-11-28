@@ -228,12 +228,20 @@ Signature of Applicant: ___________________________`;
               <span>RTI Application Assistant</span>
             </button>
             <a
+              href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+              download="Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+              className="px-4 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5 bg-red-600 hover:bg-red-500 text-white shadow-md font-sans"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download Evidence Dossier (.PDF)</span>
+            </a>
+            <a
               href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md"
               download="Save_Ranchi_Trees_Official_Evidence_Dossier.md"
               className="px-4 py-2 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5 bg-emerald-400 hover:bg-emerald-300 text-gray-950 shadow-md font-sans"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download Evidence Dossier (.MD)</span>
+              <span>Markdown (.MD)</span>
             </a>
           </div>
         </div>
@@ -286,20 +294,28 @@ Signature of Applicant: ___________________________`;
             <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-emerald-800/60">
               <div className="flex flex-wrap items-center gap-2">
                 <a
-                  href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md"
-                  download="Save_Ranchi_Trees_Official_Evidence_Dossier.md"
-                  className="px-4 py-2.5 rounded-xl text-xs font-bold bg-amber-400 hover:bg-amber-300 text-gray-950 flex items-center gap-1.5 shadow-md transition-all font-sans"
+                  href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+                  download="Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+                  className="px-4 py-2.5 rounded-xl text-xs font-bold bg-red-600 hover:bg-red-500 text-white flex items-center gap-1.5 shadow-md transition-all font-sans"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Download Dossier (.MD)</span>
+                  <span>Download Official PDF (.PDF)</span>
+                </a>
+                <a
+                  href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md"
+                  download="Save_Ranchi_Trees_Official_Evidence_Dossier.md"
+                  className="px-3.5 py-2.5 rounded-xl text-xs font-bold bg-amber-400 hover:bg-amber-300 text-gray-950 flex items-center gap-1.5 shadow-md transition-all font-sans"
+                >
+                  <FileText className="w-4 h-4 text-gray-950" />
+                  <span>Markdown (.MD)</span>
                 </a>
                 <a
                   href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.txt"
                   download="Save_Ranchi_Trees_Official_Evidence_Dossier.txt"
-                  className="px-4 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-gray-100 text-gray-900 flex items-center gap-1.5 shadow-md transition-all font-sans"
+                  className="px-3.5 py-2.5 rounded-xl text-xs font-bold bg-white hover:bg-gray-100 text-gray-900 flex items-center gap-1.5 shadow-md transition-all font-sans"
                 >
                   <FileText className="w-4 h-4 text-emerald-700" />
-                  <span>Download Mobile Text (.TXT)</span>
+                  <span>Mobile Text (.TXT)</span>
                 </a>
               </div>
 
@@ -731,6 +747,15 @@ Signature of Applicant: ___________________________`;
                     <span>Draft in RTI Assistant</span>
                   </button>
                 )}
+
+                <a
+                  href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+                  download="Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+                  className="px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-colors"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download Dossier (.PDF)</span>
+                </a>
 
                 {selectedDocForModal.source_url && (selectedDocForModal.source_url.endsWith(".md") || selectedDocForModal.source_url.endsWith(".txt")) && (
                   <a

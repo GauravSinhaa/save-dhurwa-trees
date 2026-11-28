@@ -105,12 +105,21 @@ export const RanchiTransparencySection: React.FC = () => {
         {/* Action Buttons */}
         <div className="flex items-center gap-2 flex-wrap">
           <a
+            href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+            download="Save_Ranchi_Trees_Official_Evidence_Dossier.pdf"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-red-700 hover:bg-red-800 text-white text-xs font-bold transition-colors shadow-sm"
+          >
+            <Download className="w-4 h-4 text-red-200" />
+            <span>Download Evidence Dossier (.PDF)</span>
+          </a>
+
+          <a
             href="/documents/Save_Ranchi_Trees_Official_Evidence_Dossier.md"
             download="Save_Ranchi_Trees_Official_Evidence_Dossier.md"
-            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold transition-colors shadow-sm"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold transition-colors shadow-sm"
           >
             <FileText className="w-4 h-4 text-amber-200" />
-            <span>Download Evidence Dossier (.MD)</span>
+            <span>Markdown (.MD)</span>
           </a>
 
           <a

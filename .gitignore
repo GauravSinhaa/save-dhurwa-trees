@@ -44,6 +44,8 @@ next-env.d.ts
 *.zip
 *.docx
 *.pdf
+!/public/documents/*.pdf
+!/documents/*.pdf
 /2026_SHAJ_111047_1/
 /Images and Videos/
 
