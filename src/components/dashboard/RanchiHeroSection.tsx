@@ -126,7 +126,7 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
         <div className="max-w-4xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-emerald-300 text-xs font-medium tracking-wide">
             <Trees className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Public Evidence Dashboard: Save Dhurwa Trees — Heritage Canopy Preservation</span>
+            <span>Public Evidence Dashboard: Ranchi Tree Dashboard — Heritage Canopy Preservation</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
@@ -381,11 +381,10 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
           <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={() => onSelectHotspot("ALL")}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-                selectedHotspot === "ALL"
+              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${selectedHotspot === "ALL"
                   ? "bg-white text-gray-950 shadow-md font-bold"
                   : "bg-white/10 hover:bg-white/20 text-gray-200"
-              }`}
+                }`}
             >
               All Ranchi (Citywide)
             </button>
@@ -396,18 +395,16 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
                 <button
                   key={h.id}
                   onClick={() => onSelectHotspot(h.id)}
-                  className={`px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 ${
-                    isSelected
+                  className={`px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 ${isSelected
                       ? "bg-amber-400 text-gray-950 font-bold ring-2 ring-white shadow-md"
                       : isSevere
-                      ? "bg-red-950/60 hover:bg-red-900/80 text-red-200 border border-red-800/60"
-                      : "bg-emerald-950/60 hover:bg-emerald-900/80 text-emerald-200 border border-emerald-800/60"
-                  }`}
+                        ? "bg-red-950/60 hover:bg-red-900/80 text-red-200 border border-red-800/60"
+                        : "bg-emerald-950/60 hover:bg-emerald-900/80 text-emerald-200 border border-emerald-800/60"
+                    }`}
                 >
                   <span
-                    className={`w-2 h-2 rounded-full ${
-                      isSevere ? "bg-red-500 animate-pulse" : "bg-orange-400"
-                    }`}
+                    className={`w-2 h-2 rounded-full ${isSevere ? "bg-red-500 animate-pulse" : "bg-orange-400"
+                      }`}
                   />
                   <span>{h.name.split(" ")[0]}</span>
                 </button>

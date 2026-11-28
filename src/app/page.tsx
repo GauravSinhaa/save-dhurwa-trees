@@ -74,8 +74,8 @@ export default function HomePage() {
               <BarChart3 className="w-4 h-4 text-emerald-200" />
               <span>
                 {language === "hi"
-                  ? "🌳 धुरवा ट्री डैशबोर्ड (डेटा व साक्ष्य)"
-                  : "🌳 Dhurwa Tree Dashboard (Civic Data)"}
+                  ? "🌳 राँची ट्री डैशबोर्ड (डेटा व साक्ष्य)"
+                  : "🌳 Ranchi Tree Dashboard (Civic Data)"}
               </span>
             </Link>
 
