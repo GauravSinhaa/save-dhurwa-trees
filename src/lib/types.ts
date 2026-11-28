@@ -169,5 +169,6 @@ export interface AvianSpecies {
   why_saplings_cannot_replace: string;
   iucn_status: string;
   corridor_hotspots: string;
+  photo_url?: string;
 }
 

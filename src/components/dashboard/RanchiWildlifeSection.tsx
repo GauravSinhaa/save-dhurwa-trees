@@ -128,13 +128,13 @@ export const RanchiWildlifeSection: React.FC = () => {
             className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group"
           >
             {/* Image / Header Banner */}
-            <div className="relative h-44 overflow-hidden bg-emerald-950">
+            <div className="relative h-48 overflow-hidden bg-emerald-950">
               <img
                 src={species.photo}
                 alt={species.english_name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-950/90 via-gray-950/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-950/90 via-gray-950/20 to-transparent" />
               <div className="absolute top-3 left-3">
                 <span className="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-white/90 text-gray-900 backdrop-blur-md shadow-sm">
                   {species.iucn_status.split("(")[0].trim()}

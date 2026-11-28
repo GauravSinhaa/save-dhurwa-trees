@@ -159,29 +159,52 @@ export const AvianImpactSection: React.FC = () => {
         {filteredSpecies.map((bird) => (
           <div
             key={bird.id}
-            className="bg-white rounded-3xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-4 group"
+            className="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group"
           >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-1">
-                <span className="text-[10px] font-mono text-gray-400 font-bold">
-                  {bird.id}
-                </span>
-                {getNestingBadge(bird.nesting_type)}
-              </div>
-
-              <div>
-                <h3 className="font-bold text-base text-gray-900 group-hover:text-emerald-800 transition-colors">
-                  {language === "hi" ? bird.common_name_hi : bird.common_name_en}
-                </h3>
-                <span className="text-xs italic text-gray-500 font-serif block">
-                  {bird.scientific_name}
-                </span>
-                {language !== "hi" && (
-                  <span className="text-[11px] text-emerald-800 font-medium block mt-0.5">
-                    {bird.common_name_hi}
+            {/* Authentic Bird Photo */}
+            {bird.photo_url && (
+              <div className="relative h-44 w-full overflow-hidden bg-emerald-950">
+                <img
+                  src={bird.photo_url}
+                  alt={bird.common_name_en}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent" />
+                <div className="absolute top-2.5 left-2.5">
+                  <span className="text-[10px] font-mono text-white font-bold bg-black/60 px-2 py-0.5 rounded-full backdrop-blur-sm">
+                    {bird.id}
                   </span>
-                )}
+                </div>
+                <div className="absolute top-2.5 right-2.5">
+                  {getNestingBadge(bird.nesting_type)}
+                </div>
               </div>
+            )}
+
+            <div className="p-5 space-y-3 flex-1 flex flex-col justify-between">
+              <div className="space-y-3">
+                {!bird.photo_url && (
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="text-[10px] font-mono text-gray-400 font-bold">
+                      {bird.id}
+                    </span>
+                    {getNestingBadge(bird.nesting_type)}
+                  </div>
+                )}
+
+                <div>
+                  <h3 className="font-bold text-base text-gray-900 group-hover:text-emerald-800 transition-colors">
+                    {language === "hi" ? bird.common_name_hi : bird.common_name_en}
+                  </h3>
+                  <span className="text-xs italic text-gray-500 font-serif block">
+                    {bird.scientific_name}
+                  </span>
+                  {language !== "hi" && (
+                    <span className="text-[11px] text-emerald-800 font-medium block mt-0.5">
+                      {bird.common_name_hi}
+                    </span>
+                  )}
+                </div>
 
               {/* Host Trees Pills */}
               <div className="space-y-1">
@@ -231,7 +254,8 @@ export const AvianImpactSection: React.FC = () => {
               </div>
             </div>
           </div>
-        ))}
+        </div>
+      ))}
       </div>
     </div>
   );

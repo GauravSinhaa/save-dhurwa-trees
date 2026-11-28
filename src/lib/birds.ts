@@ -21,6 +21,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
     iucn_status: "Least Concern (Severely threatened by urban canopy felling)",
     corridor_hotspots:
       "Vivekananda School More to Dhurwa Post Office (Chainage 0+200 to 1+400)",
+    photo_url: "/images/birds/hornbill.jpg",
   },
   {
     id: "bird-002",
@@ -40,6 +41,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Requires thick branches (>20 cm diameter) with partial internal softness to peck out nest holes; saplings have zero excavatable limbs.",
     iucn_status: "Protected under Wildlife Protection Act (Schedule II)",
     corridor_hotspots: "HEC Administrative Avenue & Sector 3 outer green belt",
+    photo_url: "/images/birds/coppersmith_barbet.jpg",
   },
   {
     id: "bird-003",
@@ -55,6 +57,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Requires natural weathering crevices and hollows formed exclusively in mature trees over 30 to 60 years old.",
     iucn_status: "Protected under Wildlife Protection Act",
     corridor_hotspots: "Near Dhurwa Dam Link and Jagannathpur Historic Corridor",
+    photo_url: "/images/birds/spotted_owlet.jpg",
   },
   {
     id: "bird-004",
@@ -70,6 +73,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Cannot breed in low or thin-branched young trees due to predation vulnerability and lack of cavity depth.",
     iucn_status: "Near Threatened (IUCN Red List)",
     corridor_hotspots: "Jagannathpur corridor to Naya Sarai approach",
+    photo_url: "/images/birds/alexandrine_parakeet.jpg",
   },
   {
     id: "bird-005",
@@ -85,6 +89,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Requires dense continuous canopy shade at 12–18m height to camouflage nests from crows and raptors.",
     iucn_status: "Least Concern (Habitat restricted in urbanized corridors)",
     corridor_hotspots: "Continuous Sal canopy between Sector 2 and Sector 3",
+    photo_url: "/images/birds/black_hooded_oriole.jpg",
   },
   {
     id: "bird-006",
@@ -100,6 +105,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Heavy raptor nests require thick structural crotches capable of holding 15–30 kg of nesting material in high winds.",
     iucn_status: "Protected under Wildlife Protection Act",
     corridor_hotspots: "Vivekananda School More & Ring Road Intersect",
+    photo_url: "/images/birds/shikra.jpg",
   },
   {
     id: "bird-007",
@@ -115,6 +121,7 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Adult peacocks weigh 4 to 6 kg; they require broad, horizontal boughs at least 10–15m off the ground to escape feral dogs and predators.",
     iucn_status: "Schedule I (Highest Protection under Wildlife Protection Act)",
     corridor_hotspots: "Dhurwa Dam Canal Link and Naya Sarai Forest Fringe",
+    photo_url: "/images/birds/peafowl.jpg",
   },
   {
     id: "bird-008",
@@ -130,5 +137,6 @@ export const dhurwaAvianSpecies: AvianSpecies[] = [
       "Colonies require undisturbed aerial space 18–25m high with massive branch span to support hundreds of roosting bats.",
     iucn_status: "Protected / Keystone ecological pollinator",
     corridor_hotspots: "Vivekananda School More heritage trees (Chainage 0+240)",
+    photo_url: "/images/birds/flying_fox.jpg",
   },
 ];
