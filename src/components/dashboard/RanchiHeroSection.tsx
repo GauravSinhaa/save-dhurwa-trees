@@ -126,7 +126,7 @@ export const RanchiHeroSection: React.FC<RanchiHeroSectionProps> = ({
         <div className="max-w-4xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-emerald-300 text-xs font-medium tracking-wide">
             <Trees className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Public Evidence Dashboard: Save Ranchi — Save Our Trees</span>
+            <span>Public Evidence Dashboard: Save Dhurwa Trees — Heritage Canopy Preservation</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">

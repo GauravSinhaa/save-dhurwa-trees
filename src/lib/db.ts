@@ -405,9 +405,9 @@ export const initialProjectDocuments: ProjectDocument[] = [
   {
     id: "doc-000",
     title:
-      "Save Ranchi — Save Our Trees: Official Statutory Evidence Dossier & Source Verification Manual",
+      "Save Dhurwa Trees — Heritage Canopy Preservation: Official Evidence Dossier & Verification Manual",
     document_type: "DPR",
-    issuing_authority: "Save Ranchi Civic Coalition (Cross-Referenced with SHAJ, CPCB, FSI)",
+    issuing_authority: "Save Dhurwa Trees Initiative (Cross-Referenced with SHAJ, CPCB, FSI)",
     publication_date: "2026-11-25",
     verification_status: "OFFICIAL_VERIFIED",
     summary:

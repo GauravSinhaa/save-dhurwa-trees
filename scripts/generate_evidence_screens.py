@@ -39,7 +39,7 @@ def draw_base_card(title, authority, category_badge, badge_color):
     # Footer
     draw.line([(40, H - 60), (W - 40, H - 60)], fill=(51, 65, 85), width=2)
     f_foot = get_font(FONT_REG, 18)
-    draw.text((40, H - 45), "SAVE RANCHI — OFFICIAL EVIDENCE DOSSIER | VERIFIABLE STATUTORY RECORD", font=f_foot, fill=(148, 163, 184))
+    draw.text((40, H - 45), "SAVE DHURWA TREES — HERITAGE CANOPY EVIDENCE DOSSIER | STATUTORY RECORD", font=f_foot, fill=(148, 163, 184))
     draw.text((W - 320, H - 45), "save-dhurwa-trees.vercel.app", font=f_foot, fill=(52, 211, 153))
 
     return img, draw
@@ -257,7 +257,7 @@ def make_screen_05():
     details = [
         ("Direct Petition Link:", "https://c.org/sTJg4xx2Vz", (56, 189, 248)),
         ("Verified Signatures:", "750+ Ranchi Residents & Citizens Across Jharkhand", (34, 197, 94)),
-        ("Petitioner:", "Gaurav Sinha & Save Ranchi Collective", (248, 250, 252)),
+        ("Petitioner:", "Gaurav Sinha & Save Dhurwa Trees Initiative", (248, 250, 252)),
         ("Key Citizen Demand 1:", "Immediate halt to felling permissions until geo-tagged tree census is published.", (248, 250, 252)),
         ("Key Citizen Demand 2:", "Adopt split-carriageway design using existing trees as central green median.", (52, 211, 153)),
         ("Key Citizen Demand 3:", "Independent tree monitoring committee comprising botanists, ecologists, and residents.", (248, 250, 252)),

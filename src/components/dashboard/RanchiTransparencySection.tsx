@@ -22,7 +22,7 @@ export const RanchiTransparencySection: React.FC = () => {
     const lines: string[] = [];
 
     // Header
-    lines.push(`"Save Ranchi - Save Our Trees: Comprehensive Citywide Environmental Dataset"`);
+    lines.push(`"Save Dhurwa Trees: Comprehensive Heritage Canopy & Environmental Dataset"`);
     lines.push(`"Generated Date","${metadata.last_updated}"`);
     lines.push(`"Official Sources","CPCB, JSPCB, FSI, Forest Dept RTI, eBird, WHO"`);
     lines.push("");

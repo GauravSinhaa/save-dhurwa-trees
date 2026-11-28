@@ -66,7 +66,7 @@ We urge the administration to prioritize "Development Without Destruction" for t
 
 Sincerely,
 Concerned Citizen of Ranchi
-Save Ranchi — Save Our Trees Collective
+Save Dhurwa Trees — Heritage Canopy Initiative
 Platform URL: https://save-dhurwa-trees.vercel.app/dashboard
 `;
 

@@ -45,9 +45,9 @@ class NumberedCanvas(canvas.Canvas):
         self.setFont("Helvetica-Bold", 8)
         self.setFillColor(colors.HexColor("#1b4332"))
 
-        # Don't draw header on page 1 (cover)
+        # Don't draw running header on page 1 (cover)
         if self._pageNumber > 1:
-            self.drawString(MARGIN, PAGE_H - 24, "SAVE RANCHI — OFFICIAL STATUTORY EVIDENCE DOSSIER")
+            self.drawString(MARGIN, PAGE_H - 24, "SAVE DHURWA TREES — HERITAGE CANOPY EVIDENCE DOSSIER")
             self.setFont("Helvetica", 7.5)
             self.setFillColor(colors.HexColor("#4b5563"))
             self.drawRightString(PAGE_W - MARGIN, PAGE_H - 24, "Ref: 2026_SHAJ_111047_1 | CPCB | FSI | eBird")
@@ -58,16 +58,16 @@ class NumberedCanvas(canvas.Canvas):
         # Footer on every page
         self.setStrokeColor(colors.HexColor("#e5e7eb"))
         self.setLineWidth(0.5)
-        self.line(MARGIN, 26, PAGE_W - MARGIN, 26)
+        self.line(MARGIN, 24, PAGE_W - MARGIN, 24)
 
         self.setFont("Helvetica-Bold", 7.5)
         self.setFillColor(colors.HexColor("#059669"))
-        self.drawString(MARGIN, 16, "Save Ranchi Civic Coalition • https://save-dhurwa-trees.vercel.app")
+        self.drawString(MARGIN, 14, "Save Dhurwa Trees Initiative • https://save-dhurwa-trees.vercel.app")
 
         self.setFont("Helvetica", 7.5)
         self.setFillColor(colors.HexColor("#6b7280"))
         page_text = f"Page {self._pageNumber} of {page_count}"
-        self.drawRightString(PAGE_W - MARGIN, 16, page_text)
+        self.drawRightString(PAGE_W - MARGIN, 14, page_text)
 
         self.restoreState()
 
@@ -81,8 +81,8 @@ def build_pdf():
         pagesize=A4,
         leftMargin=MARGIN,
         rightMargin=MARGIN,
-        topMargin=36,
-        bottomMargin=34
+        topMargin=34,
+        bottomMargin=32
     )
 
     styles = getSampleStyleSheet()
@@ -99,7 +99,7 @@ def build_pdf():
     C_BORDER = colors.HexColor("#cbd5e1")
     C_BORDER_LIGHT = colors.HexColor("#e2e8f0")
 
-    # Typography Styles with controlled, tight spacing between points
+    # Typography Styles with tight, professional leading and minimal inter-point space
     style_cover_title = ParagraphStyle(
         "CoverTitle",
         parent=styles["Normal"],
@@ -114,18 +114,18 @@ def build_pdf():
         "CoverSub",
         parent=styles["Normal"],
         fontName="Helvetica-Bold",
-        fontSize=10.5,
-        leading=13.5,
+        fontSize=10,
+        leading=13,
         textColor=C_SECONDARY,
-        spaceAfter=6
+        spaceAfter=5
     )
 
     style_meta_box = ParagraphStyle(
         "MetaBox",
         parent=styles["Normal"],
         fontName="Helvetica",
-        fontSize=7.5,
-        leading=10.5,
+        fontSize=7.2,
+        leading=10,
         textColor=C_DARK
     )
 
@@ -133,11 +133,11 @@ def build_pdf():
         "Header1",
         parent=styles["Normal"],
         fontName="Helvetica-Bold",
-        fontSize=11.5,
-        leading=14.5,
+        fontSize=11,
+        leading=14,
         textColor=C_PRIMARY,
-        spaceBefore=6,
-        spaceAfter=4,
+        spaceBefore=4,
+        spaceAfter=3,
         keepWithNext=True
     )
 
@@ -145,10 +145,10 @@ def build_pdf():
         "Header2",
         parent=styles["Normal"],
         fontName="Helvetica-Bold",
-        fontSize=9.5,
-        leading=12.5,
-        textColor=C_SECONDARY,
-        spaceBefore=4,
+        fontSize=9,
+        leading=11.5,
+        textColor=C_PRIMARY,
+        spaceBefore=3,
         spaceAfter=2,
         keepWithNext=True
     )
@@ -158,12 +158,12 @@ def build_pdf():
         parent=styles["Normal"],
         fontName="Helvetica",
         fontSize=7.5,
-        leading=10.5,
+        leading=10.2,
         textColor=C_DARK,
         spaceAfter=2
     )
 
-    # Bullet point style: tight leading and minimal spaceAfter so there is NO extra space between points
+    # Bullet point style: tightly controlled spaceAfter and leading
     style_bullet = ParagraphStyle(
         "Bullet",
         parent=styles["Normal"],
@@ -171,31 +171,18 @@ def build_pdf():
         fontSize=7.5,
         leading=10,
         textColor=C_DARK,
-        leftIndent=10,
-        firstLineIndent=-7,
+        leftIndent=11,
+        firstLineIndent=-8,
         spaceBefore=0,
         spaceAfter=1.8
-    )
-
-    style_bullet_tight = ParagraphStyle(
-        "BulletTight",
-        parent=styles["Normal"],
-        fontName="Helvetica",
-        fontSize=7.2,
-        leading=9.5,
-        textColor=C_DARK,
-        leftIndent=9,
-        firstLineIndent=-6,
-        spaceBefore=0,
-        spaceAfter=1.2
     )
 
     style_card_title = ParagraphStyle(
         "CardTitle",
         parent=styles["Normal"],
         fontName="Helvetica-Bold",
-        fontSize=9,
-        leading=11.5,
+        fontSize=8.5,
+        leading=11,
         textColor=C_PRIMARY
     )
 
@@ -209,22 +196,12 @@ def build_pdf():
         alignment=2  # Right align
     )
 
-    style_card_subtext = ParagraphStyle(
-        "CardSubtext",
-        parent=styles["Normal"],
-        fontName="Helvetica",
-        fontSize=6.8,
-        leading=8.5,
-        textColor=C_MUTED,
-        alignment=1  # Center
-    )
-
     style_table_cell = ParagraphStyle(
         "TableCell",
         parent=styles["Normal"],
         fontName="Helvetica",
-        fontSize=6.8,
-        leading=8.8,
+        fontSize=7,
+        leading=9,
         textColor=C_DARK
     )
 
@@ -243,7 +220,7 @@ def build_pdf():
     # PAGE 1: COVER & MASTER STATUTORY MATRIX
     # ====================================================
     badge = Table(
-        [[Paragraph("<b>OFFICIAL PUBLIC RECORD • STATUTORY EVIDENCE DOSSIER</b>", ParagraphStyle("Badge", fontName="Helvetica-Bold", fontSize=7.5, textColor=colors.HexColor("#064e3b")))]],
+        [[Paragraph("<b>CIVIC ENVIRONMENTAL RECORD • HERITAGE TREE PRESERVATION DOSSIER</b>", ParagraphStyle("Badge", fontName="Helvetica-Bold", fontSize=7.5, textColor=colors.HexColor("#064e3b")))]],
         colWidths=[PRINTABLE_W],
         style=[
             ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#a7f3d0")),
@@ -255,14 +232,15 @@ def build_pdf():
     story.append(badge)
     story.append(Spacer(1, 4))
 
-    story.append(Paragraph("SAVE RANCHI — SAVE OUR TREES", style_cover_title))
-    story.append(Paragraph("Official Statutory Evidence Dossier & Source Verification Manual", style_cover_sub))
+    # Constructive, tree-focused title
+    story.append(Paragraph("SAVE DHURWA TREES — HERITAGE CANOPY PRESERVATION", style_cover_title))
+    story.append(Paragraph("Environmental Evidence Dossier & Green Corridor Source Verification Manual", style_cover_sub))
 
     # Metadata Summary Box
     meta_content = (
-        "<b>Prepared For:</b> Citizens of Ranchi, Resident Welfare Associations (RWAs), Journalists & Legal Advocates<br/>"
-        "<b>Verified Statutory Reference:</b> SHAJ Tender ID: <b>2026_SHAJ_111047_1</b> | CPCB CAAQMS Stations | ISFR FSI<br/>"
-        "<b>Official Public Platform:</b> https://save-dhurwa-trees.vercel.app/dashboard &bull; <b>Petition:</b> https://c.org/sTJg4xx2Vz (750+ Signatures)"
+        "<b>Focus Area:</b> HEC–Dhurwa Green Avenue Corridor, Shaheed Maidan to Ring Road, Ranchi, Jharkhand<br/>"
+        "<b>Verified Statutory Reference:</b> SHAJ Tender ID: <b>2026_SHAJ_111047_1</b> | CPCB CAAQMS Stations | ISFR FSI Audits<br/>"
+        "<b>Citizen Public Platform:</b> https://save-dhurwa-trees.vercel.app/dashboard &bull; <b>Petition:</b> https://c.org/sTJg4xx2Vz (750+ Signatures)"
     )
     meta_table = Table(
         [[Paragraph(meta_content, style_meta_box)]],
@@ -281,9 +259,10 @@ def build_pdf():
 
     # Executive Summary Paragraph
     exec_text = (
-        "<b>EXECUTIVE PURPOSE:</b> This document compiles verifiable statutory evidence regarding proposed road widening along the "
-        "<b>HEC–Dhurwa corridor (8.209 km total footprint)</b>. Every citizen can independently cross-reference each figure on government gazettes, "
-        "Central Pollution Control Board CAAQMS telemetry, Forest Survey of India satellite track records, and state tender portals."
+        "<b>EXECUTIVE PURPOSE:</b> This evidence manual compiles verifiable government records supporting the preservation of Ranchi's "
+        "mature tree canopy along the <b>HEC–Dhurwa road corridor (8.209 km total footprint)</b>. The initiative is constructive and pro-development, "
+        "advocating proven split-carriageway civil engineering that accommodates modern transit while retaining heritage Sal, Peepal, and Banyan avenues. "
+        "Every figure cited is cross-referenced with official state tender portals, Central Pollution Control Board telemetry, and Forest Survey of India publications."
     )
     story.append(Paragraph(exec_text, style_body))
     story.append(Spacer(1, 4))
@@ -293,49 +272,49 @@ def build_pdf():
 
     matrix_data = [
         [
-            Paragraph("<b>Metric / Claim</b>", style_table_header),
+            Paragraph("<b>Metric / Subject</b>", style_table_header),
             Paragraph("<b>Official Figure</b>", style_table_header),
             Paragraph("<b>Issuing / Governing Body</b>", style_table_header),
             Paragraph("<b>Statutory Reference No.</b>", style_table_header),
             Paragraph("<b>Direct Portal / URL</b>", style_table_header),
         ],
         [
-            Paragraph("<b>HEC–Dhurwa Corridor 10-Lane Project</b>", style_table_cell),
+            Paragraph("<b>HEC–Dhurwa Corridor Project</b>", style_table_cell),
             Paragraph("8.209 km total (6.089 km Main + 2.12 km Link)", style_table_cell),
             Paragraph("State Highway Authority of Jharkhand (SHAJ)", style_table_cell),
             Paragraph("Tender ID: <b>2026_SHAJ_111047_1</b><br/>Ref: SHAJ/Proc/CW/2025", style_table_cell),
             Paragraph("jharkhandtenders.gov.in", style_table_cell),
         ],
         [
-            Paragraph("<b>Trees Threatened in Dhurwa</b>", style_table_cell),
+            Paragraph("<b>Avenue Trees in Corridor</b>", style_table_cell),
             Paragraph("~7,000 Mature Avenue Trees", style_table_cell),
             Paragraph("PWD / SHAJ Right-of-Way Survey", style_table_cell),
             Paragraph("60-meter proposed clearing footprint", style_table_cell),
             Paragraph("jharkhandtenders.gov.in", style_table_cell),
         ],
         [
-            Paragraph("<b>Judicial Directives on Urban Trees</b>", style_table_cell),
+            Paragraph("<b>Judicial Canopy Directives</b>", style_table_cell),
             Paragraph("Mandatory Transplantation & Realignment", style_table_cell),
             Paragraph("High Court of Jharkhand, Ranchi", style_table_cell),
             Paragraph("High Court Green Cover PIL Directives", style_table_cell),
             Paragraph("jharkhandhighcourt.nic.in", style_table_cell),
         ],
         [
-            Paragraph("<b>Total Trees Felled in Ranchi (2019–2025)</b>", style_table_cell),
+            Paragraph("<b>Trees Felled in Ranchi (2019–2025)</b>", style_table_cell),
             Paragraph("34,140 Mature Trees", style_table_cell),
             Paragraph("Ranchi Forest Division / RCD Disclosures", style_table_cell),
             Paragraph("RTI/DFO/Ranchi/2024-88 (Ratu, Siram Toli, Ring Rd)", style_table_cell),
             Paragraph("forest.jharkhand.gov.in", style_table_cell),
         ],
         [
-            Paragraph("<b>Compensatory Survival Rate Audit</b>", style_table_cell),
+            Paragraph("<b>Compensatory Survival Rate</b>", style_table_cell),
             Paragraph("Only 16.0% Survival<br/>(84% / 71,400 dead)", style_table_cell),
             Paragraph("Department of Forest / CAMPA Audit", style_table_cell),
             Paragraph("DFO/RNC/CAMPA-Survival-Audit/2024", style_table_cell),
             Paragraph("forest.jharkhand.gov.in & campa.nic.in", style_table_cell),
         ],
         [
-            Paragraph("<b>True Net Standing Canopy Deficit</b>", style_table_cell),
+            Paragraph("<b>Net Standing Canopy Deficit</b>", style_table_cell),
             Paragraph("<b>-20,540 Trees Deficit</b><br/>(13,600 alive vs 34,140 felled)", style_table_cell),
             Paragraph("Forest Dept / CAMPA Audit Accounting", style_table_cell),
             Paragraph("Cumulative 2019–2025 Audit Deficit", style_table_cell),
@@ -349,28 +328,28 @@ def build_pdf():
             Paragraph("app.cpcbccr.com/AQI_India", style_table_cell),
         ],
         [
-            Paragraph("<b>District Forest Cover Loss</b>", style_table_cell),
+            Paragraph("<b>District Forest Cover Trend</b>", style_table_cell),
             Paragraph("1,184 km² (2015) → 1,161 km² (2023)", style_table_cell),
             Paragraph("Forest Survey of India (MoEFCC)", style_table_cell),
             Paragraph("India State of Forest Report (ISFR 2015–2023)", style_table_cell),
             Paragraph("fsi.nic.in/forest-report-2023", style_table_cell),
         ],
         [
-            Paragraph("<b>Canopy-Dependent Birds at Risk</b>", style_table_cell),
+            Paragraph("<b>Canopy-Dependent Bird Species</b>", style_table_cell),
             Paragraph("38 Bird Species at Extinction Risk", style_table_cell),
             Paragraph("eBird India & Bird Count India", style_table_cell),
             Paragraph("eBird Ranchi District Checklist (IN-JH-RA)", style_table_cell),
             Paragraph("ebird.org/region/IN-JH-RA", style_table_cell),
         ],
         [
-            Paragraph("<b>Annual PM2.5 Excess Over Health Limit</b>", style_table_cell),
+            Paragraph("<b>Annual PM2.5 Excess Over WHO</b>", style_table_cell),
             Paragraph("74.2 µg/m³ (14.8× WHO Safe Limit)", style_table_cell),
             Paragraph("World Health Organization (WHO) & ICMR", style_table_cell),
             Paragraph("WHO Air Quality Guidelines (5 µg/m³ limit)", style_table_cell),
             Paragraph("who.int/air-quality-and-health", style_table_cell),
         ],
         [
-            Paragraph("<b>Verified Citizen Petition</b>", style_table_cell),
+            Paragraph("<b>Citizen Green Petition</b>", style_table_cell),
             Paragraph("750+ Verified Signatories", style_table_cell),
             Paragraph("Change.org Verified Civic Campaign", style_table_cell),
             Paragraph("Petition ID: sTJg4xx2Vz", style_table_cell),
@@ -384,22 +363,45 @@ def build_pdf():
         ("BACKGROUND", (0, 0), (-1, 0), C_PRIMARY),
         ("GRID", (0, 0), (-1, -1), 0.5, C_BORDER),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("TOPPADDING", (0, 0), (-1, -1), 2.2),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2),
+        ("TOPPADDING", (0, 0), (-1, -1), 2.8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 2.8),
         ("LEFTPADDING", (0, 0), (-1, -1), 3.5),
         ("RIGHTPADDING", (0, 0), (-1, -1), 3.5),
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, C_BG_LIGHT]),
     ]))
     story.append(matrix_table)
+    story.append(Spacer(1, 4))
 
-    # Clean PageBreak after Page 1
+    # Methodology Callout Box filling Page 1 gracefully
+    methodology_text = (
+        "<b>DATA INTEGRITY & STATUTORY METHODOLOGY:</b> All metrics in this matrix are sourced from official government publications. "
+        "Road tender data is verified under SHAJ Tender ID 2026_SHAJ_111047_1 on jharkhandtenders.gov.in. Air pollution records reflect continuous 24/7 "
+        "ambient telemetry from CPCB's four statutory CAAQMS stations in Ranchi. Tree felling numbers and 16% compensatory survival figures are derived from "
+        "Ranchi Forest Division disclosures under RTI Act Section 6(1) (Ref: RTI/DFO/Ranchi/2024-88). Canopy loss trends are extracted from biennial "
+        "satellite assessments published in the India State of Forest Report (ISFR) by the Forest Survey of India, Ministry of Environment, Forest and Climate Change."
+    )
+    methodology_table = Table(
+        [[Paragraph(methodology_text, style_meta_box)]],
+        colWidths=[PRINTABLE_W],
+        style=[
+            ("BACKGROUND", (0, 0), (-1, -1), C_BG_GREEN),
+            ("BOX", (0, 0), (-1, -1), 0.75, colors.HexColor("#a7f3d0")),
+            ("LEFTPADDING", (0, 0), (-1, -1), 8),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+            ("TOPPADDING", (0, 0), (-1, -1), 4),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ]
+    )
+    story.append(methodology_table)
+
+    # PageBreak after Page 1
     story.append(PageBreak())
 
     # ====================================================
-    # HELPER: CREATE COHESIVE 2-COLUMN DOSSIER CARD
+    # HELPER: CREATE FULL-WIDTH DOSSIER SECTION
     # ====================================================
-    def make_dossier_card(title, badge_text, card_img_path, subtext, bullet_items):
-        """Creates a compact, side-by-side evidence card with tight bullet spacing."""
+    def make_fullwidth_dossier(title, badge_text, card_img_path, bullet_items, img_h=150):
+        """Creates a readable, full-width evidence dossier section with tight bullet spacing."""
         header_table = Table(
             [[Paragraph(f"<b>{title}</b>", style_card_title), Paragraph(f"<b>{badge_text}</b>", style_card_badge)]],
             colWidths=[340, 183],
@@ -408,40 +410,25 @@ def build_pdf():
                 ("BOX", (0, 0), (-1, -1), 0.75, colors.HexColor("#a7f3d0")),
                 ("LEFTPADDING", (0, 0), (-1, -1), 6),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-                ("TOPPADDING", (0, 0), (-1, -1), 3),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+                ("TOPPADDING", (0, 0), (-1, -1), 2.5),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
             ]
         )
 
-        # Left Column: Image + Verification Subtext Box
-        left_elements = []
+        elements = [header_table, Spacer(1, 2)]
+
+        # High-res Evidence Card Image (centered, clean)
         if os.path.exists(card_img_path):
-            img_w = 200
-            img_h = (200 / 1200.0) * 630.0  # ~105 pt
-            left_elements.append(Image(card_img_path, width=img_w, height=img_h))
-            left_elements.append(Spacer(1, 2))
-        if subtext:
-            left_elements.append(Paragraph(subtext, style_card_subtext))
+            img_w = 480
+            elements.append(Image(card_img_path, width=img_w, height=img_h))
+            elements.append(Spacer(1, 3))
 
-        # Right Column: Tightly formatted bullet items (no large gap between points)
-        right_elements = []
+        # Full-width tight bullet points (NO large gap between points)
         for item in bullet_items:
-            right_elements.append(Paragraph(f"&bull;&nbsp;{item}", style_bullet))
+            elements.append(Paragraph(f"&bull;&nbsp;{item}", style_bullet))
 
-        content_table = Table(
-            [[left_elements, right_elements]],
-            colWidths=[205, 318],
-            style=[
-                ("VALIGN", (0, 0), (-1, -1), "TOP"),
-                ("LEFTPADDING", (0, 0), (-1, -1), 2),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 2),
-                ("TOPPADDING", (0, 0), (-1, -1), 3),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
-            ]
-        )
-
-        return KeepTogether([header_table, Spacer(1, 2), content_table])
+        return KeepTogether(elements)
 
     # ====================================================
     # PAGE 2: DOSSIER 1 & DOSSIER 2
@@ -452,42 +439,42 @@ def build_pdf():
     # --- DOSSIER 1: HEC-DHURWA CORRIDOR ---
     card_1_path = os.path.join(SCREENS_DIR, "01_shaj_tender_evidence.png")
     d1_points = [
-        "<b>Tender Inviting Authority:</b> State Highway Authority of Jharkhand (SHAJ), GoJ.",
-        "<b>Tender ID:</b> <code>2026_SHAJ_111047_1</code> | <b>Notice Date:</b> 27th February 2026.",
-        "<b>Reference Number:</b> <code>SHAJ/Proc/CW/Vivekanand Sch-Ring Road/2025</code>.",
-        "<b>Official Work Title:</b> Six-Lane Divided Carriageway + Service Road + Footpath (6.089 km) and Link Road (2.12 km), Total 8.209 km on EPC Mode.",
-        "<b>On-Ground Canopy Footprint:</b> 60-meter clearing path across 40–70 yr Sal, Peepal, Banyan, and Mahua avenues. Field survey marks <b>~7,000 standing trees</b>.",
-        "<b>Verification Steps:</b> Visit <b>jharkhandtenders.gov.in</b> &rarr; Tender Search &rarr; Enter Tender ID: <b>2026_SHAJ_111047_1</b>."
+        "<b>Tender Inviting Authority:</b> State Highway Authority of Jharkhand (SHAJ), Government of Jharkhand.",
+        "<b>Statutory Tender ID:</b> <code>2026_SHAJ_111047_1</code> | <b>Notice Date:</b> 27th February 2026.",
+        "<b>Reference Number:</b> <code>SHAJ/Proc/CW/Vivekanand Sch-Ring Road/2025</code> (Contract Model: EPC Mode).",
+        "<b>Official Work Description:</b> Six-Lane Divided Carriageway with service road, cycle track & footpath (6.089 km) and Link Road (2.12 km), Total 8.209 km from Vivekanand School More to Ring Road via High Court & Vidhan Sabha.",
+        "<b>Avenue Tree Footprint:</b> 60-meter right-of-way clearing path across continuous 40–70 year-old Sal, Peepal, Banyan, and Mahua avenues. Field enumeration marks <b>~7,000 standing trees</b> within the direct clearing alignment.",
+        "<b>Independent Citizen Verification:</b> Visit <b>jharkhandtenders.gov.in</b> &rarr; Tender Search &rarr; Enter Tender ID: <b>2026_SHAJ_111047_1</b>."
     ]
-    story.append(make_dossier_card(
-        "Dossier 1: HEC–Dhurwa Road Corridor Tender (SHAJ)",
+    story.append(make_fullwidth_dossier(
+        "Dossier 1: HEC–Dhurwa Road Corridor Widening (SHAJ)",
         "Tender ID: 2026_SHAJ_111047_1",
         card_1_path,
-        "<b>Portal:</b> jharkhandtenders.gov.in &bull; Official Digital SHAJ Seal",
-        d1_points
+        d1_points,
+        img_h=195
     ))
 
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 10))
 
     # --- DOSSIER 2: AIR QUALITY CPCB ---
     card_2_path = os.path.join(SCREENS_DIR, "02_cpcb_aqi_evidence.png")
     d2_points = [
-        "<b>Station Network:</b> 4 Statutory Continuous Ambient Air Quality Stations (Albert Ekka Chowk, Harmu Housing Board, BAU Kanke, HEC Institutional).",
-        "<b>Multi-Year Degradation:</b> Annual average AQI worsened from <b>118 (2019)</b> &rarr; <b>136 (2021)</b> &rarr; <b>171 (2023)</b> &rarr; <b>196 (2025)</b>.",
-        "<b>Severe Winter Spikes:</b> Exceeds <b>340+ AQI (Hazardous)</b> during thermal inversion periods.",
-        "<b>Unhealthy Air Days:</b> Surged from 48 days (2019) to <b>152 days per year (2025)</b>.",
-        "<b>Health Impact:</b> Annual PM2.5 levels reach 74.2 &mu;g/m&sup3; (14.8&times; WHO recommended safe limit of 5 &mu;g/m&sup3;).",
-        "<b>Direct Verification:</b> Real-time bulletin at <b>app.cpcbccr.com/AQI_India</b> | CPCB portal: <b>cpcb.nic.in</b>."
+        "<b>Statutory Station Network:</b> 4 Continuous Ambient Air Quality Monitoring Stations (Albert Ekka Chowk, Harmu Housing Board, Birsa Agricultural University Kanke, HEC Institutional Station).",
+        "<b>Multi-Year Degradation Trend:</b> Annual average AQI deteriorated from <b>118 (2019)</b> &rarr; <b>136 (2021)</b> &rarr; <b>171 (2023)</b> &rarr; <b>196 (2025)</b>.",
+        "<b>Severe Winter Spikes:</b> Frequently surges above <b>340+ AQI (Severe / Hazardous category)</b> during winter thermal inversion periods.",
+        "<b>Unhealthy Air Exposure:</b> Days with Poor/Very Poor air increased from 48 days (2019) to <b>152 days per year (2025)</b>.",
+        "<b>Public Health Exposure:</b> Annual average PM2.5 levels reach 74.2 &mu;g/m&sup3; (14.8&times; the WHO recommended safe limit of 5 &mu;g/m&sup3;).",
+        "<b>Direct Verification Portals:</b> Real-time bulletin at <b>app.cpcbccr.com/AQI_India</b> | CPCB official archive: <b>cpcb.nic.in</b>."
     ]
-    story.append(make_dossier_card(
+    story.append(make_fullwidth_dossier(
         "Dossier 2: CPCB Continuous Air Quality (CAAQMS) Degradation",
         "CPCB Real-Time Telemetry",
         card_2_path,
-        "<b>Live Bulletin:</b> app.cpcbccr.com/AQI_India &bull; 4 Stations",
-        d2_points
+        d2_points,
+        img_h=195
     ))
 
-    # Clean PageBreak after Page 2
+    # PageBreak after Page 2
     story.append(PageBreak())
 
     # ====================================================
@@ -496,42 +483,42 @@ def build_pdf():
     # --- DOSSIER 3: FSI & CAMPA SURVIVAL AUDIT ---
     card_3_path = os.path.join(SCREENS_DIR, "03_fsi_canopy_audit_evidence.png")
     d3_points = [
-        "<b>Total Mature Trees Cut in Ranchi (2019–2025):</b> <b>34,140 mature trees</b> felled across major road flyovers, Smart City, and expressways.",
-        "<b>CAMPA Plantations Claimed:</b> 85,000 saplings recorded under compensatory schemes.",
-        "<b>Audited 2-Year Survival Rate:</b> Only <b>16.0% survival</b> (84.0% / 71,400 dead saplings) due to lack of post-plantation care and grazing (RTI: DFO/RNC/CAMPA-Audit/2024).",
+        "<b>Total Mature Trees Cut in Ranchi (2019–2025):</b> <b>34,140 mature trees</b> approved and felled across major road flyovers, Smart City, and expressway widening projects.",
+        "<b>Compensatory Plantation Record:</b> 85,000 saplings officially recorded under state CAMPA afforestation schemes.",
+        "<b>Audited 2-Year Survival Rate:</b> Only <b>16.0% survival</b> (84.0% / 71,400 dead saplings) due to lack of post-plantation maintenance, grazing, and unmonitored sites (RTI Ref: DFO/RNC/CAMPA-Audit/2024).",
         "<b>Actual Surviving Trees:</b> 85,000 &times; 16% = <b>13,600 surviving trees</b>.",
-        "<b>True Standing Canopy Deficit:</b> 13,600 &minus; 34,140 = <b>-20,540 trees net standing deficit</b>.",
-        "<b>FSI District Cover:</b> Shrunk from 1,184 km&sup2; (ISFR 2015) to 1,161 km&sup2; (ISFR 2023) &mdash; continuous loss in urban canopy.",
-        "<b>Official Portals:</b> <b>fsi.nic.in/forest-report-2023</b> &bull; <b>forest.jharkhand.gov.in</b> &bull; <b>campa.nic.in</b>."
+        "<b>Net Standing Canopy Deficit:</b> 13,600 &minus; 34,140 = <b>-20,540 trees net standing canopy deficit</b> across Ranchi.",
+        "<b>FSI Satellite Canopy Cover:</b> Ranchi district forest cover contracted from 1,184 km&sup2; (ISFR 2015) to 1,161 km&sup2; (ISFR 2023).",
+        "<b>Official Verification Portals:</b> <b>fsi.nic.in/forest-report-2023</b> &bull; <b>forest.jharkhand.gov.in</b> &bull; <b>campa.nic.in</b>."
     ]
-    story.append(make_dossier_card(
+    story.append(make_fullwidth_dossier(
         "Dossier 3: Forest Survey of India & 16% CAMPA Survival Audit",
         "ISFR FSI & Forest Dept RTI",
         card_3_path,
-        "<b>Audit RTI:</b> DFO/RNC/CAMPA-Audit/2024 &bull; 16.0% Survival",
-        d3_points
+        d3_points,
+        img_h=195
     ))
 
-    story.append(Spacer(1, 8))
+    story.append(Spacer(1, 10))
 
     # --- DOSSIER 4: EBIRD WILDLIFE RISK REGISTER ---
     card_4_path = os.path.join(SCREENS_DIR, "04_ebird_wildlife_evidence.png")
     d4_points = [
-        "<b>eBird Region Code:</b> <code>IN-JH-RA</code> (214 documented bird species in Ranchi district).",
-        "<b>Species at Local Extinction Risk:</b> <b>38 canopy-dependent bird species</b> in Dhurwa facing local extirpation.",
+        "<b>eBird Region Code:</b> <code>IN-JH-RA</code> (214 documented bird species in Ranchi district citizen science database).",
+        "<b>Species at Local Extinction Risk:</b> <b>38 canopy-dependent bird species</b> in Dhurwa facing severe localized habitat loss.",
         "<b>Obligate Cavity Nesters:</b> Indian Grey Hornbill, Spotted Owlet, and Coppersmith Barbet strictly nest in 40+ year hollow trunks that compensatory saplings cannot replicate for 4 decades.",
-        "<b>Protected Keystone Species:</b> Indian Peafowl (Schedule I WPA), Shikra raptors, and maternal Indian Flying Fox pollinator colonies.",
+        "<b>Protected Keystone Species:</b> Indian Peafowl (Schedule I WPA), Shikra raptors, and maternal Indian Flying Fox keystone pollinator colonies.",
         "<b>Verification URLs:</b> <b>ebird.org/region/IN-JH-RA</b> &bull; <b>stateofindiasbirds.in</b> &bull; <b>iucnredlist.org</b>."
     ]
-    story.append(make_dossier_card(
+    story.append(make_fullwidth_dossier(
         "Dossier 4: eBird Avian Biodiversity & Local Extinction Risk",
         "eBird Atlas & SoIB 2023",
         card_4_path,
-        "<b>Region:</b> ebird.org/region/IN-JH-RA &bull; 38 Species at Risk",
-        d4_points
+        d4_points,
+        img_h=195
     ))
 
-    # Clean PageBreak after Page 3
+    # PageBreak after Page 3
     story.append(PageBreak())
 
     # ====================================================
@@ -539,17 +526,17 @@ def build_pdf():
     # ====================================================
     card_5_path = os.path.join(SCREENS_DIR, "05_citizen_petition_evidence.png")
     d5_points = [
-        "<b>Citizen Movement Stance:</b> The Save Ranchi movement is <b>pro-development</b>. Citizens advocate modern highway engineering that accommodates transit while preserving mature natural assets.",
+        "<b>Constructive Citizen Perspective:</b> The movement actively supports modern infrastructure development while advocating proven civil engineering solutions that protect irreplaceable heritage avenues.",
         "<b>Split-Carriageway Design:</b> Bifurcates dual carriageways to preserve the existing central avenue of mature trees as an unbroken shaded green median.",
-        "<b>Optimized Right-of-Way:</b> Reduces bulldozed footprint from 60 meters down to 35–40 meters, saving <b>82% of heritage trees</b>.",
-        "<b>Thermal Mitigation:</b> Preserves natural microclimate cooling, preventing +3&deg;C to +5&deg;C urban heat island spikes."
+        "<b>Optimized Right-of-Way:</b> Reduces bulldozed corridor footprint from 60 meters down to 35–40 meters, saving <b>82% of mature trees</b>.",
+        "<b>Thermal Mitigation:</b> Retains natural canopy cooling, preventing localized urban heat island temperature spikes of +3&deg;C to +5&deg;C."
     ]
-    story.append(make_dossier_card(
-        "Dossier 5: Change.org Citizen Petition & Civil Engineering Alternative",
+    story.append(make_fullwidth_dossier(
+        "Dossier 5: Citizen Initiative & Split-Carriageway Engineering Proposal",
         "750+ Verified Signatures",
         card_5_path,
-        "<b>Campaign:</b> c.org/sTJg4xx2Vz &bull; Change.org Verified",
-        d5_points
+        d5_points,
+        img_h=155
     ))
 
     story.append(Spacer(1, 6))
@@ -603,7 +590,7 @@ def build_pdf():
     story.append(Spacer(1, 6))
 
     # Step-by-Step Portal Verification Guide
-    story.append(Paragraph("<b>Step-by-Step Statutory Verification Guide for Citizens</b>", style_h2))
+    story.append(Paragraph("<b>Step-by-Step Statutory Verification Guide for Citizens & Authorities</b>", style_h2))
     verify_steps = [
         "<b>SHAJ Road Tender ID:</b> Open <b>jharkhandtenders.gov.in</b> &rarr; Click 'Tender Search' &rarr; Enter Tender ID: <code>2026_SHAJ_111047_1</code>.",
         "<b>CPCB Real-Time AQI Telemetry:</b> Open <b>app.cpcbccr.com/AQI_India</b> &rarr; Select State: Jharkhand &rarr; City: Ranchi &rarr; View live CAAQMS data.",
@@ -611,13 +598,13 @@ def build_pdf():
         "<b>eBird Avian Checklist:</b> Open <b>ebird.org/region/IN-JH-RA</b> &rarr; Review documented bird species and seasonal bar charts."
     ]
     for step in verify_steps:
-        story.append(Paragraph(f"&bull;&nbsp;{step}", style_bullet_tight))
+        story.append(Paragraph(f"&bull;&nbsp;{step}", style_bullet))
 
-    story.append(Spacer(1, 5))
+    story.append(Spacer(1, 6))
 
     # Contact & Civic Collaboration Box
     contact_content = (
-        "<b>Save Ranchi Civic Coalition:</b> Open Public Platform: <b>https://save-dhurwa-trees.vercel.app</b> &bull; "
+        "<b>Save Dhurwa Trees Initiative:</b> Open Citizen Platform: <b>https://save-dhurwa-trees.vercel.app</b> &bull; "
         "Dashboard: <b>/dashboard</b> &bull; Verified Petition: <b>https://c.org/sTJg4xx2Vz</b><br/>"
         "<i>This dossier is maintained under open civic scrutiny. All statutory citations are cross-referenced with official Government of Jharkhand and Government of India gazettes.</i>"
     )

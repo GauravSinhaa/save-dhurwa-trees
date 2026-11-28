@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/dashboard", label: language === "hi" ? "🚨 राँची डैशबोर्ड" : "🚨 Save Ranchi Dashboard", icon: BarChart3, highlight: true },
+    { href: "/dashboard", label: language === "hi" ? "🌳 धुरवा ट्री डैशबोर्ड" : "🌳 Dhurwa Tree Dashboard", icon: BarChart3, highlight: true },
     { href: "/", label: t.nav.home, icon: Trees },
     { href: "/project", label: t.nav.project, icon: AlertTriangle },
     { href: "/map", label: t.nav.map, icon: MapPin },

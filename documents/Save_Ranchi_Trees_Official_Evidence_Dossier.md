@@ -1,4 +1,4 @@
-# SAVE RANCHI — SAVE OUR TREES
+# SAVE DHURWA TREES — HERITAGE CANOPY PRESERVATION
 ## Official Statutory Evidence Dossier & Source Verification Manual
 
 > **Document Classification:** Public Record & Civic Evidence Dossier  
@@ -11,7 +11,7 @@
 
 ### EXECUTIVE SUMMARY & PURPOSE
 
-This document serves as the **definitive, verifiable evidence manual** backing every statistic, map point, air quality chart, and ecological claim presented on the **Save Ranchi — Save Our Trees** public platform. 
+This document serves as the **definitive, verifiable evidence manual** backing every statistic, map point, air quality chart, and ecological claim presented on the **Save Dhurwa Trees — Heritage Canopy Preservation** public platform. 
 
 In light of ongoing public discussions, civic inquiries, and ground mobilizations regarding tree felling in the **HEC–Dhurwa corridor** and across Ranchi city, this dossier provides:
 1. **Exact Statutory Document References** (Tender IDs, Gazette Orders, RTI Disclosures).
@@ -206,7 +206,7 @@ Air quality data in Ranchi is recorded 24/7 by the **Central Pollution Control B
 * **Verified Signatures:** **750+ Ranchi citizens** within initial mobilization.
 
 #### 2. The Constructive Alternative: "Split-Carriageway Design"
-The Save Ranchi initiative is **NOT an anti-development agitation**. The platform advocates for proven civil engineering alternatives:
+The Save Dhurwa Trees initiative is **NOT an anti-development agitation**. The platform advocates for proven civil engineering alternatives:
 
 | Parameter | Conventional 60m Design (Current Plan) | Proposed Split-Carriageway Design (Citizen Proposal) |
 | :--- | :--- | :--- |
