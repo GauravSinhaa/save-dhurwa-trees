@@ -415,7 +415,7 @@ export const initialProjectDocuments: ProjectDocument[] = [
       "Compensatory survival audit shows 84% sapling mortality (only 16% survive).",
       "Annual AQI worsened from 118 (2019) to 196 (2025) across 4 CPCB CAAQMS stations.",
       "eBird field documentation reveals 38 resident and migratory bird species at immediate risk.",
-      "Complete Section 6(1) RTI application template included.",
+      "Split-Carriageway design alternative preserving 82% mature avenue trees.",
     ],
   },
   {

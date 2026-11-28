@@ -539,45 +539,20 @@ def build_pdf():
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, C_BG_LIGHT]),
     ]))
     story.append(alt_table)
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 14))
 
     # ----------------------------------------------------
-    # SECTION 3: SECTION 6(1) RTI TEMPLATE
+    # CONTACT & COLLABORATION
     # ----------------------------------------------------
-    story.append(Paragraph("3. Statutory RTI Application Template (Section 6(1) RTI Act 2005)", style_h1))
+    story.append(Paragraph("Contact & Civic Collaboration", style_h2))
     story.append(Paragraph(
-        "Any Indian citizen can file this application with the Public Information Officer (PIO) of SHAJ or the Divisional Forest Officer (DFO) Ranchi:",
+        "• <b>Live Environmental Platform:</b> https://save-dhurwa-trees.vercel.app<br/>"
+        "• <b>Direct Evidence Dashboard:</b> https://save-dhurwa-trees.vercel.app/dashboard<br/>"
+        "• <b>Sign & Share the Petition:</b> https://c.org/sTJg4xx2Vz (750+ verified signatures)<br/>"
+        "• <b>Official Dataset:</b> src/data/ranchi-environmental-data.json<br/><br/>"
+        "<i>This dossier is maintained under open civic scrutiny. All statutory citations are cross-referenced with official Government of Jharkhand and Government of India gazettes.</i>",
         style_body
     ))
-
-    rti_code = (
-        "FORM 'A' — APPLICATION FOR INFORMATION UNDER SECTION 6(1) OF RTI ACT, 2005\n"
-        "To:\n"
-        "The Public Information Officer (PIO),\n"
-        "State Highways Authority of Jharkhand (SHAJ) / Divisional Forest Officer (DFO), Ranchi.\n\n"
-        "SUBJECT: PUBLIC INQUIRY REGARDING TENDER ID: 2026_SHAJ_111047_1 (VIVEKANAND MORE TO RING ROAD)\n\n"
-        "1. Certified copy of the Joint Tree Enumeration Survey Register specifying tree counts, girth, and species.\n"
-        "2. Certified copy of the statutory application for Tree Felling Permission submitted to the Forest Dept.\n"
-        "3. Certified copy of Tree Felling Clearance / Sanction Order granted, along with all conditions imposed.\n"
-        "4. Exact survey plot numbers and GPS coordinates of land identified for Compensatory Afforestation.\n"
-        "5. Section of the Detailed Project Report (DPR) evaluating Split-Carriageway alternatives to save trees.\n\n"
-        "Applicant Name: ________________________________  Address: _____________________________________\n"
-        "Fee: Rs. 10/- enclosed via IPO / Court Fee Stamp.  Date: ________________  Signature: ____________"
-    )
-
-    rti_box = Table(
-        [[Paragraph(rti_code.replace("\n", "<br/>"), style_code_box)]],
-        colWidths=[PRINTABLE_W],
-        style=[
-            ("BACKGROUND", (0, 0), (-1, -1), C_BG_LIGHT),
-            ("BOX", (0, 0), (-1, -1), 1, colors.HexColor("#9ca3af")),
-            ("LEFTPADDING", (0, 0), (-1, -1), 10),
-            ("RIGHTPADDING", (0, 0), (-1, -1), 10),
-            ("TOPPADDING", (0, 0), (-1, -1), 8),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
-        ]
-    )
-    story.append(rti_box)
 
     doc.build(story, canvasmaker=NumberedCanvas)
 

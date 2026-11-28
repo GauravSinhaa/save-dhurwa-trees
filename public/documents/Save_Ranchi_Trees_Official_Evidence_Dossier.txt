@@ -219,42 +219,6 @@ The Save Ranchi initiative is **NOT an anti-development agitation**. The platfor
 
 ---
 
-## 3. READY-TO-USE CITIZEN RTI APPLICATION TEMPLATE
-
-Any citizen of Ranchi can lawfully verify tree enumeration, felling permissions, and compensatory plans by filing an application under **Section 6(1) of the Right to Information Act, 2005**.
-
-```text
-To,
-The Public Information Officer (PIO),
-State Highway Authority of Jharkhand (SHAJ) / Ranchi Forest Division,
-Government of Jharkhand, Ranchi.
-
-SUBJECT: APPLICATION UNDER SECTION 6(1) OF THE RTI ACT, 2005 REGARDING TENDER ID: 2026_SHAJ_111047_1
-
-Sir/Madam,
-
-Kindly provide certified copies of the following official information in respect of the road project:
-"Widening & Strengthening of Vivekanand School More to Ring Road via Jharkhand High Court & Vidhan Sabha Road (Length 6.089 km)" under Tender ID: 2026_SHAJ_111047_1:
-
-1. Certified copy of the Joint Tree Enumeration Survey Register specifying the total number of trees, serial markings, species, girth, and chainage along the 6.089 km corridor.
-2. Certified copy of the statutory application for Tree Felling Permission submitted to the Forest Department under Jharkhand tree-protection regulations.
-3. Certified copy of the Tree Felling Sanction Order / Clearance, if granted by the competent forest authority, along with all conditions imposed.
-4. Complete details of the Compensatory Afforestation Plan, including:
-   a) GPS coordinates / Survey plot numbers of the designated land.
-   b) Total funds deposited under CAMPA.
-   c) Species selection and 5-year survival liability clause.
-5. Certified copy of the Detailed Project Report (DPR) sections examining alternative geometric alignments (such as Split-Carriageway designs) to preserve standing mature trees.
-6. Details of public consultation notices and environmental clearance under EPA 1986.
-
-I am an Indian citizen. I have deposited the prescribed fee of Rs. 10/-.
-
-Name: _______________________________
-Address: ____________________________
-Date: _______________________________
-```
-
----
-
 ### CONTACT & COLLABORATION
 * **Live Environmental Platform:** [https://save-dhurwa-trees.vercel.app](https://save-dhurwa-trees.vercel.app)
 * **Direct Evidence Dashboard:** [https://save-dhurwa-trees.vercel.app/dashboard](https://save-dhurwa-trees.vercel.app/dashboard)
